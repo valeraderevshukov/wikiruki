@@ -13,7 +13,7 @@
       "htmlhint --config .htmlhintrc"
     ]
   },
-  "authors": "<DibssSolutions>",
+  "authors": "<valeriiderevshchykov@gmail.com",
   "devDependencies": {
     "autoprefixer": "^6.3.3",
     "babel-core": "^6.18.2",
