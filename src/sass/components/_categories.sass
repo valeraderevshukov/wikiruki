@@ -1,0 +1,42 @@
+.categories
+	padding: 103px 0 80px
+	overflow: hidden
+	+md
+		padding: 55px 0 15px
+	&__title
+		margin-bottom: 33px
+		+md
+			margin-bottom: 15px
+	&__row
+		margin: 0 -20px
+	&__col
+		padding: 0 20px
+		margin-bottom: 40px
+		+sm
+			margin-bottom: 15px
+
+.category
+	padding-left: 30px
+	min-height: 80px
+	height: 100%
+	+f(18px,400,1)
+	display: flex
+	color: $emperor 
+	align-items: center
+	transition: color .3s, box-shadow .3s
+	justify-content: space-between
+	border: 1px solid $gallery 
+	+hover
+		color: $black 
+		box-shadow: 0 4px 20px rgba($black, .12) 
+	+sm
+		min-height: 70px
+	&__name
+		padding: 10px 0
+		max-width: calc(100% - 56px) 
+	&__img
+		width: 56px
+		img
+			max-width: 100%
+			max-height: 100%
+			display: block

@@ -1,0 +1,168 @@
+.logo
+	position: relative
+	display: flex
+	align-items: center
+	img
+		display: block
+		max-width: 100%
+	&__icons
+		width: 140px
+		transition: opacity .3s
+		+md
+			width: 126px 
+		.is-open-menu &
+			+md
+				opacity: 0
+	&__text
+		margin-left: 16px
+		width: 102px
+		transition: opacity .3s
+		+lg
+			position: absolute
+			top: 50%
+			left: 0
+			transform: translateY(-50%)
+			opacity: 0	
+		.is-open-menu &
+			+md
+				opacity: 1
+			
+.login
+	display: flex
+	flex-wrap: wrap
+	align-items: center
+	+md
+		border-top: 1px solid $gallery  
+		text-align: center
+	&__item
+		+md
+			width: 50%
+		&:not(:first-child)
+			margin-left: 25px
+			+md
+				margin-left: 0
+				border-left: 1px solid $gallery 
+	&__link
+		color: inherit 
+		transition: color .3s
+		+hover
+			color: $blue
+		+md
+			padding: 20px 19px
+			display: block
+		.login__item.is-active &
+			color: $blue 
+.nav
+	+md
+		padding: 23px 15px 0
+		box-shadow: 0 4px 16px rgba($black, 0.1) 
+	&__list
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		+md
+			padding: 30px 0
+			text-align: center
+			display: block
+	&__item
+		padding: 0 12px
+		&:not(:first-child)
+			+md
+				margin-top: 30px
+		+md
+			display: block
+	&__link
+		color: inherit 
+		transition: color .3s
+		+hover
+			color: $blue
+		.nav__item.is-active &
+			color: $blue 
+	&__login
+		display: none
+		+md
+			margin: 0 -15px
+			display: flex
+
+.search
+	&__button
+		position: relative
+		width: 60px
+		height: 60px
+		font-size: 0
+		line-height: 1
+		background-color: $white 
+		display: block
+		.icon
+			position: absolute
+			top: 50%
+			left: 50%
+			margin: -14px 0 0 -14px
+			font-size: 28px
+			color: $blue 
+
+.nav-search
+	font-size: 0
+	display: none
+	+md
+		display: block
+	&__input
+		padding: 2px 8px
+		width: 100%
+		font-family: $walsheim
+		+f(20px,400,1.25)
+		letter-spacing: -0.013em
+		color: $emperor
+		height: 38px
+		border-bottom: 1px solid $gallery 
+		display: inline-block
+		&::placeholder
+			color: rgba($emperor, .3)
+
+.header
+	position: absolute
+	top: 30px
+	left: 0
+	z-index: 10
+	font-size: 15px
+	width: 100%
+	+md
+		top: 0
+		font-size: 20px
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: center
+		box-shadow: 0 4px 16px rgba($black, 0.1) 
+		background-color: $white 
+	&__nav
+		+md
+			position: absolute
+			top: 100%
+			left: 0
+			width: 100%
+			opacity: 0
+			z-index: -1
+			visibility: hidden
+			transition: opacity .3s, visibility .3s
+			background-color: $white
+			.is-open-menu & 
+				opacity: 1
+				visibility: visible
+	&__login
+		+md
+			display: none
+	&__inner
+		+md
+			padding: 0
+	&__right
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+	&__search
+		border-left: 1px solid $mercury 
+		+md
+			display: none
+		&:not(:first-child)
+			margin-left: 27px

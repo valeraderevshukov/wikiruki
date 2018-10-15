@@ -10,6 +10,7 @@ export const OVERFLOW_HIDDEN = 'is-overflow-hidden';
 
 export const widthMD = 1024;
 export const widthSM = 768;
+export const widthXS = 480;
 
 export const BODY = $('body');
 export const WIN = $(window);

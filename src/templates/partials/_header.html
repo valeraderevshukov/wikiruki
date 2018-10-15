@@ -1,1 +1,53 @@
-<p>Hello from partials/_header.html</p>
+{% import "partials/_mixins.html" as mixins %}
+{% macro block(props) %}
+<!-- begin header -->
+<header class="header js-header">
+	<div class="header__inner inner">
+		<div class="header__wrap">
+			<div class="header__left">
+				<!-- begin logo -->
+				<a href="#" class="logo">
+					<span class="logo__icons">
+						<img src="./img/logo-icons.svg" alt="logo-icons">
+					</span>
+					<span class="logo__text">
+						<img src="./img/logo-text.svg" alt="logo-text">
+					</span>
+				</a>
+				<!-- end logo -->
+			</div>
+			<nav class="header__nav nav js-nav">
+				<form action="#" class="nav__search nav-search js-nav-search">
+					<input type="text" class="nav-search__input" placeholder="Поиск по сайту">
+				</form>
+				<ul class="nav__list">
+					{% for text in ['Инструкции', 'Классы', 'Конкурсы', 'Вопрос-ответ', 'Образование'] %}
+					<li class="nav__item">
+						<a href="#" class="nav__link">{{ text }}</a>
+					</li>
+					{% endfor %}
+				</ul>
+				<div class="nav__login login">
+					<div class="login__item"><a href="#" class="login__link">Вход</a></div>
+					<div class="login__item is-active"><a href="#" class="login__link">Регистрация</a></div>
+				</div>
+			</nav>
+			<div class="header__right">
+				<div class="header__login login">
+					<div class="login__item"><a href="#" class="login__link">Вход</a></div>
+					<div class="login__item is-active"><a href="#" class="login__link">Регистрация</a></div>
+				</div>
+				<div class="header__search search">
+					<button class="search__button" type="button">{{ mixins.icon('search') }}</button>
+				</div>
+				<button class="btn-menu js-btn-menu" type="button">
+					<span class="btn-menu__line"></span>
+					<span class="btn-menu__line"></span>
+					<span class="btn-menu__line"></span>
+				</button>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- end header -->
+{% endmacro %}

@@ -5,46 +5,11 @@ title: Index page
 
 {% block content %}
 	
-	{# variable example #}
-	<h1>{{title}}</h1>
-
-	
-	{# partial example #}
-	{% include "partials/_header.html" %}
-
-	{# mixin example #}
-	{{mixins.icon('facebook')}}
-
-
-	{# checkbox exepmle #}
-	<p>{{ mixins.checkbox() }}</p>
-	<p>
-		{{ mixins.checkbox({
-			checked: true,
-			name: 'exemple-name',
-			text: 'checkbox-checked'
-		}) }}
-	</p>
-	{# radio exepmle #}
-	{{ mixins.checkbox({
-		name: 'exemple-name',
-		text: 'text',
-		radio: true
-	}) }}
-	
-
-	{# breadcrumbs exepmle #}
-	{{ mixins.breadcrumbs({
-		list: ['Главная','Внутренняя','Корзина']
-	}) }}
-
-
-	{# data usage example #}
-		{% import "data/data.html" as tests %}
-		
-		{% for test in tests.list %}
-		<li>{{test.title}}</li>
-		{% endfor %}
-	{# end of example #}
+	{{ header.block() }}
+	{% include "./partials/home/_hero.html" %}
+	{% include "./partials/home/_popular.html" %}
+	{% include "./partials/home/_top.html" %}
+	{% include "./partials/home/_instructions.html" %}
+	{% include "./partials/home/_сategories.html" %}
 
 {% endblock %}

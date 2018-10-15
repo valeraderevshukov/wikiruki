@@ -1,0 +1,88 @@
+.hero
+	position: relative
+	padding-top: 155px
+	overflow: hidden
+	background-color: $dodgerBlue 
+	+md
+		padding: 313px 0 15px
+	+sm
+		padding-bottom: 8px
+	&__inner
+		display: flex
+		+md
+			justify-content: center
+		// +sm
+		// 	display: block
+	&__wrap
+		margin-bottom: 65px 
+		padding: 35px 40px 40px
+		max-width: 650px
+		min-width: 597px
+		align-self: flex-start
+		background-color: $white 
+		+md
+			position: relative
+			margin-bottom: 0
+			padding-bottom: 0
+			z-index: 1
+			max-width: 590px
+			min-width: auto
+		+sm
+			margin: 0 -10px
+			width: 100%
+			padding: 8px 10px 0
+	&__separator
+		margin: 0 17px
+		color: $boulder 
+		text-transform: uppercase
+		+md
+			display: none
+	&__footer
+		margin-top: 180px
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		+md
+			margin: 90px -40px 0
+		+sm
+			margin: 45px -10px 0
+	&__btn.btn
+		+md
+			width: 50%
+			padding: 17px 20px
+			border: 2px solid $blue
+			text-align: center
+			+hover
+				color: $white 
+				background-color: $blue 
+		+sm
+			width: 50%
+			padding: 13px 30px
+		.btn__text
+			border-bottom: none 
+		&:not(:first-child)
+			+md
+				margin-left: -2px
+				width: calc(50% + 2px)
+	&__img
+		position: relative
+		z-index: 1
+		pointer-events: none
+		margin-top: -78px
+		margin-left: -43px
+		max-width: 537px
+		max-height: 563px 
+		overflow: hidden
+		align-self: flex-end
+		+md
+			position: absolute
+			top: 55px
+			z-index: 0
+			margin-top: 0
+		+sm
+			left: 50%
+			margin-left: -108px 
+			width: 275px
+		img
+			max-width: 100%
+			display: block

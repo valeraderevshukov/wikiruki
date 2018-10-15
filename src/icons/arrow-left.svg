@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="25px" viewBox="0 0 15 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>Arrow_left</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Main-—-Nonauth" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-35.000000, -984.000000)">
+            <g id="Arrow_left" transform="translate(35.000000, 984.000000)" fill="#D8D8D8">
+                <g id="Group-3-Copy" transform="translate(7.500000, 12.500000) rotate(-180.000000) translate(-7.500000, -12.500000) ">
+                    <rect id="Rectangle-9" x="0" y="0" width="5" height="5"></rect>
+                    <rect id="Rectangle-9-Copy-3" x="0" y="20" width="5" height="5"></rect>
+                    <rect id="Rectangle-9" x="5" y="5" width="5" height="5"></rect>
+                    <rect id="Rectangle-9-Copy-2" x="5" y="15" width="5" height="5"></rect>
+                    <rect id="Rectangle-9-Copy" x="10" y="10" width="5" height="5"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

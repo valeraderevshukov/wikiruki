@@ -1,0 +1,51 @@
+.like
+	position: relative
+	padding-left: 23px
+	font-family: $roboto
+	+f(14px,400,1.15) 
+	letter-spacing: 0 
+	cursor: pointer
+	user-select: none
+	vertical-align: top
+	display: inline-block
+	+hover
+		.icon-heart-outline
+			color: $blue 
+	// +hover
+	// 	input
+	// 		&:checked
+	// 			& ~ .icon-heart
+	// 				opacity: 0
+	// 				visibility: hidden
+	// 			& ~ .icon-heart-outline
+	// 				opacity: 1
+	// 				visibility: visible
+	input
+		position: absolute
+		top: 0
+		left: 0
+		opacity: 0
+		&:checked
+			& ~ .icon-heart-outline
+				opacity: 0
+				visibility: hidden
+			& ~ .icon-heart
+				opacity: 1
+				visibility: visible
+				
+	.icon-heart-outline,
+	.icon-heart
+		position: absolute
+		top: 0
+		left: 0
+		transition: opacity .3s, visibility .3s, color .3s
+	.icon-heart-outline
+		font-size: 16px
+	.icon-heart
+		left: -1px
+		left: -1px
+		opacity: 0
+		visibility: hidden
+		z-index: 1
+		color: $blue 
+		font-size: 18px

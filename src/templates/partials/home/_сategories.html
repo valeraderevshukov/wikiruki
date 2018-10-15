@@ -1,0 +1,53 @@
+<!-- begin сategories -->
+<div class="categories">
+	<div class="categories__inner inner">
+		<h3 class="categories__title title-md">Категории</h3>
+		<div class="categories__row row">
+			{% for category in [
+				{
+					name: 'Еда и напитки'
+				},
+				{
+					name: 'Авто-мото'
+				},
+				{
+					name: 'Образование'
+				},
+				{
+					name: 'Техника'
+				},
+				{
+					name: 'Роботы'
+				},
+				{
+					name: 'Спорт и ЗОЖ'
+				},
+				{
+					name: 'Дом и быт'
+				},
+				{
+					name: 'Фотография'
+				},
+				{
+					name: 'Красота'
+				},
+				{
+					name: 'Музыка'
+				},
+				{
+					name: 'Хобби (крафт)'
+				},
+				{
+					name: 'Игры'
+				}
+			] %}
+				<div class="categories__col col-md-4">
+					{{ mixins.category({
+						name: category.name
+					}) }}
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+<!-- end сategories -->

@@ -1,4 +1,5 @@
 {% import "partials/_mixins.html" as mixins %}
+{% import "partials/_header.html" as header %}
 <!doctype html>
 <html>
   <head>
@@ -16,6 +17,7 @@
     <!-- BEGIN content -->
     <div class="out">
       {% block content %}{% endblock %}
+    {% include "../partials/_footer.html" %}
     </div>
     <!-- END content -->
 

@@ -1,0 +1,147 @@
+.footer
+	padding: 60px 0 25px
+	font-size: 14px
+	background-color: #202020 
+	+sm
+		padding: 30px 0
+	// &__inner
+	&__top
+		padding-bottom: 61px
+		+sm
+			padding-bottom: 0
+	&__left
+		+sm
+			padding-bottom: 40px
+	// &__right
+	&__title
+		position: relative
+		margin-bottom: 18px
+		color: $white 
+		font-family: $walsheim
+		+f(18px,400,1)
+		.footer__group &
+			+sm
+				margin-bottom: 0
+				padding-right: 10px
+				cursor: pointer
+			&:before,
+			&:after
+				position: absolute
+				content: "" 
+				top: 50%
+				background-color: $white 
+				display: none
+				+sm
+					display: block
+			&:before
+				right: 2px
+				margin: -1px 0 0 -3px
+				width: 6px
+				height: 2px
+			&:after
+				right: 4px
+				margin: -3px 0 0 -1px
+				width: 2px
+				height: 6px
+				transition: transform .3s
+				[data-accordion-item].is-open &
+					transform: scaleY(0)
+	&__subscribe
+		margin-top: 65px
+		+sm
+			margin-top: 30px
+	&__text
+		max-width: 401px
+	&__group
+		+sm
+			padding: 25px 0
+			border-top: 1px solid #979797 
+	&__list
+		margin-top: 17px
+	&__item
+		display: block
+		&:not(:first-child)
+			margin-top: 10px
+	&__link
+		color: $gray 
+		transition: color .3s
+		+hover
+			color: $white 
+	&__bottom
+		padding-top: 23px
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		justify-content: space-between
+		border-top: 1px solid #979797 
+		+md
+			flex-direction: column
+			align-items: initial
+	&__copy
+		display: flex
+		align-items: center
+	&__logo
+		margin-right: 18px
+	&__policy
+		+md
+			margin-top: 30px
+		.footer__link
+			margin-left: 18px
+			+md
+				margin-left: 0
+			+sm
+				display: block
+			&:not(:first-child)
+				margin-top: 10px 
+.subscribe
+	position: relative
+	max-width: 401px
+	&__input
+		font-size: 0
+		input
+			padding: 10px 110px 10px 18px
+			height: 56px
+			font-family: $roboto
+			+f(14px,400, 1.14) 
+			color: $gallery
+			width: 100%
+			background-color: rgba(#D8D8D8, 0.1)
+			display: inline-block
+			&::placeholder
+				color: rgba($gallery, 0.5)
+			&:focus
+				&::placeholder
+					font-size: 0
+			+sm
+				padding-right: 50px
+	&__btn
+		position: absolute
+		top: 0
+		right: 0
+		padding: 20px 16px
+		color: $gallery
+		font-family: $roboto
+		+f(14px,400, 1.14) 
+		transition: color .3s
+		background-color: transparent 
+		+hover
+			color: $white 
+		+sm
+			padding: 23px 16px
+			font-size: 0
+		.icon-arr-right
+			font-size: 10px
+			display: none
+			+sm
+				display: inline-block
+.logo-sm
+	width: 93px
+	vertical-align: top
+	display: inline-block
+	img
+		max-width: 100%
+		display: block
+.copy
+	color: $white 
+	vertical-align: top
+	display: inline-block

@@ -1,0 +1,17 @@
+<!-- begin top -->
+<div class="top">
+	<div class="top__inner inner">
+		<h2 class="top__title-md title-md">Топ классов</h2>
+		<div class="top__row row">
+			{% for class in range(0,3) %}
+			<div class="top__col col-lg-4">
+				{{ mixins.class() }}
+			</div>
+			{% endfor %}
+		</div>
+		<div class="top__footer">
+			<a href="#" class="btn btn_lg btn_bord-sm btn_bord-gray">все классы</a>
+		</div>
+	</div>
+</div>
+<!-- end top -->

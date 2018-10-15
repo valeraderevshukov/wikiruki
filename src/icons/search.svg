@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>Group Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Header_desktop" transform="translate(-1235.000000, -16.000000)" fill="#3F36FF" fill-rule="nonzero">
+            <g id="Group-4">
+                <g id="Group-Copy" transform="translate(1235.035129, 16.000000)">
+                    <path d="M11.9906323,23.5 C5.64431576,23.5 0.49960968,18.3512746 0.49960968,12 C0.49960968,5.64872538 5.64431576,0.5 11.9906323,0.5 C18.3369489,0.5 23.481655,5.64872538 23.481655,12 C23.481655,18.3512746 18.3369489,23.5 11.9906323,23.5 Z M11.9906323,20.5 C16.681388,20.5 20.4839969,16.6944204 20.4839969,12 C20.4839969,7.30557963 16.681388,3.5 11.9906323,3.5 C7.2998766,3.5 3.49726776,7.30557963 3.49726776,12 C3.49726776,16.6944204 7.2998766,20.5 11.9906323,20.5 Z" id="Oval"></path>
+                    <polygon id="Line" points="17.3651132 19.5 25.1372158 27.2781746 27.2568802 25.1568542 19.4847775 17.3786797"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

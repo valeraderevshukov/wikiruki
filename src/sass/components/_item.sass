@@ -1,0 +1,38 @@
+.item
+	height: 100%
+	display: flex
+	flex-wrap: wrap
+	transition: box-shadow .3s
+	border: 1px solid $gallery 
+	+hover
+		box-shadow: 0 4px 20px rgba($black, .12) 
+	+md
+		width: 260px
+	&__out
+		align-self: flex-start
+	&__img
+		width: 100%
+		padding-bottom: 62%
+		border-bottom: 1px solid $gallery 
+		background-repeat: no-repeat
+		background-position: center 
+		background-size: cover
+		display: block
+	&__wrap
+		padding: 16px
+		display: flex
+		flex-direction: column
+	&__category
+		margin-bottom: 11px
+		+f(11px,400,1.18)
+		letter-spacing: 0.006em
+		text-transform: uppercase
+		color: rgba(#3F3F3F, .5)
+	&__title
+		+f(16px,400,1.3125)
+		color: #3F3F3F 
+	&__footer
+		width: 100%
+		padding: 27px 16px 17px
+		line-height: 1
+		align-self: flex-end

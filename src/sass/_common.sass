@@ -1,4 +1,17 @@
 body
-	background: #FFF
-	line-height: 1.4
+	font-family: $roboto
+	+f(16px,400,1.5)
+	letter-spacing: -0.007em
+	color: $emperor 
+	background: $white
 
+// colors
+.color-dark
+	color: $dark 
+.color-blue
+	color: $blue 
+
+.md-show
+	display: none !important
+	+md
+		display: block !important

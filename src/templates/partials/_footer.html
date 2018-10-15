@@ -1,0 +1,67 @@
+<!-- begin footer -->
+<div class="footer">
+	<div class="footer__inner inner">
+		<div class="footer__top row">
+			<div class="footer__left col-md-6">
+				<div class="footer__title">E-mail рассылка</div>
+				<div class="footer__text">Оставь свой адрес e-mail и получи доступ к еженедельной рассылке лучших инструкций и новостей WikiRuki:</div>
+				<!-- begin subscribe -->
+				<form class="footer__subscribe subscribe">
+					<div class="subscribe__input">
+						<input type="text" placeholder="Ваш e-mail">
+					</div>
+					<button class="subscribe__btn" type="button">ОТПРАВИТЬ{{ mixins.icon('arr-right') }}</button>
+				</form>
+				<!-- end subscribe -->
+			</div>
+			<div class="footer__right col-md-6" data-accordion-group>
+				<div class="footer__row row">
+					<div class="footer__col col-md-4" data-accordion-item data-accordion-open data-accordion-on-init="768">
+						<div class="footer__group">
+							<div class="footer__title" data-accordion-trigger>Портал</div>
+							<ul class="footer__list" data-accordion-container>
+								{% for value in ['Инструкции', 'Классы' , 'Конкурсы', 'Вопрос-ответ', 'Образование'] %}
+								<li class="footer__item"><a href="#" class="footer__link">{{ value }}</a></li>
+								{% endfor %}
+							</ul>
+						</div>
+					</div>
+					<div class="footer__col col-md-4" data-accordion-item data-accordion-on-init="768">
+						<div class="footer__group">
+							<div class="footer__title" data-accordion-trigger>О нас</div>
+							<ul class="footer__list" data-accordion-container>
+								{% for value in ['Что такое WikiRuki?', 'Сотрудничество', 'Контакты', 'Вакансии', 'Часто задаваемые вопросы'] %}
+								<li class="footer__item"><a href="#" class="footer__link">{{ value }}</a></li>
+								{% endfor %}
+							</ul>
+						</div>
+					</div>
+					<div class="footer__col col-md-4" data-accordion-item data-accordion-on-init="768">
+						<div class="footer__group">
+							<div class="footer__title" data-accordion-trigger>Мы в соцсетях</div>
+							<ul class="footer__list" data-accordion-container>
+								{% for value in ['Вконтакте', 'Facebook', 'Youtube', 'Instagram', 'Pinterest'] %}
+								<li class="footer__item"><a href="#" class="footer__link">{{ value }}</a></li>
+								{% endfor %}
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="footer__copy">
+				<a href="#" class="footer__logo logo-sm">
+					<img src="./img/logo-sm.svg" alt="img">
+				</a>
+				<div class="copy">Copyright WikiRuki &copy; 2018</div>
+			</div>
+			<div class="footer__policy">
+				<a href="#" class="footer__link">Пользовательское соглашение</a>
+				<a href="#" class="footer__link">Политика конфиденциальности</a>
+				<a href="#" class="footer__link">Термины и положения</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end footer -->

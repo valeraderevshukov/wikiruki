@@ -28,3 +28,52 @@
 </label>
 <!-- end input -->
 {% endmacro %}
+
+{% macro like(props) %}
+<!-- begin like -->
+<label class="like{% if props.class %} {{ props.class }}{% endif %}">
+	<input type="checkbox" {% if props.checked %} checked{% endif %}>
+	{{ icon('heart-outline') }}
+	{{ icon('heart') }}
+	<span class="like__quantity">{{ props.quantity or '18' }}</span>
+</label>
+<!-- end like -->
+{% endmacro %}
+
+{% macro item(props) %}
+<!-- begin item -->
+<div class="item">
+	<a href="#" class="item__out">
+		<div class="item__img" style="background-image: url('./img/{{ props.img or 'item-img.jpg' }}')"></div>
+		<div class="item__wrap">
+			<div class="item__category">{{ props.category }}</div>
+			<div class="item__title">{{ props.title }}</div>
+		</div>
+	</a>
+	<div class="item__footer">
+		{{ like() }}	
+	</div>
+</div>
+<!-- end item -->
+{% endmacro %}
+
+{% macro class(props) %}
+<!-- begin class -->
+<a href="#" class="class" style="background-image: url('./img/{{ props.bg or 'class-mg-1.jpg'}}');">
+	<div class="class__quantity">{{ props.quantity or '5294 Участника' }}</div>
+	<div class="class__title">{{ props.title or 'Выпекаем ништяки' }}</div>
+</a>
+<!-- end class -->
+{% endmacro %}
+
+{% macro category(props) %}
+<!-- begin category -->
+<a href="#" class="category">
+	<span class="category__name">{{ props.name }}</span>
+	<span class="category__img">
+		<img src="./img/categories/{{ props.icon or 'car.png' }}" alt="img">
+	</span>
+</a>
+<!-- end category -->
+{% endmacro %}
+

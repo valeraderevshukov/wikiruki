@@ -1,0 +1,53 @@
+<!-- begin popular -->
+<div class="popular">
+	<div class="popular__inner inner">
+		<h2 class="popular__title-md title-md">Популярное за неделю:</h2>
+		<div class="popular__slider slider js-slider">
+			{% for item in [
+				{
+					category: 'еда и напитки',
+					title: 'Готовим вкусный шашлык на мангале из кирпичей'
+				},
+				{
+					category: 'еда и напитки',
+					title: 'Легкий способ открыть вино без штопора и карандаша'
+				},
+				{
+					category: 'роботы',
+					title: 'Как вывести биткоины на карту Сбербанка быстро, без комиссии и посредников'
+				},
+				{
+					category: 'авто-мото',
+					title: 'Противоугонная система для Мазды 3 своими руками'
+				},
+				{
+					category: 'еда и напитки',
+					title: 'Готовим вкусный шашлык на мангале из кирпичей'
+				},
+				{
+					category: 'еда и напитки',
+					title: 'Легкий способ открыть вино без штопора и карандаша'
+				},
+				{
+					category: 'роботы',
+					title: 'Как вывести биткоины на карту Сбербанка быстро, без комиссии и посредников'
+				},
+				{
+					category: 'авто-мото',
+					title: 'Противоугонная система для Мазды 3 своими руками'
+				}
+			] %}
+			<div class="slider__slide">
+				{{ mixins.item({
+					category: item.category,
+					title: item.title
+				}) }}
+			</div>
+			{% endfor %}
+		</div>
+		<div class="popular__footer">
+			<a href="#" class="btn btn_lg btn_bord-sm btn_bord-gray">Смотреть все инструкции</a>
+		</div>
+	</div>
+</div>
+<!-- end popular -->

@@ -1,0 +1,88 @@
+.btn
+	padding: 17px 47px
+	font-family: $roboto
+	+f(16px,500,1) 
+	letter-spacing: 0.05em 
+	color: $blue 
+	text-align: center
+	vertical-align: top
+	text-transform: uppercase
+	border: 2px solid $blue
+	transition: color .3s, background-color .3s
+	display: inline-block
+	+hover
+		color: $white 
+		background-color: $blue 
+	+lg
+		padding: 17px 30px
+	+md
+		padding: 13px 30px
+		font-size: 12px
+	+sm
+		width: 100%
+
+	&_lg
+		max-width: 620px
+		width: 100%
+
+	&_bord-sm
+		padding: 18px 47px
+		border-width: 1px
+	&_bord-gray
+		color: $emperor 
+		border-color: $gallery 
+	&_transparent
+		padding-left: 0
+		padding-right: 0
+		border: none 
+		+lg
+			padding-left: 0
+			padding-right: 0
+		+hover
+			color: $blue
+			background-color: transparent
+			.btn__text
+				border-color: currentColor 
+				
+	&_blue
+		color: $white
+		background-color: $blue 
+		+hover
+			color: $blue
+			background-color: transparent
+	&__text
+		border-bottom: 1px solid transparent 
+		transition: border-color .3s
+
+.btn-menu
+	position: relative
+	width: 54px
+	height: 54px
+	border-left: 1px solid $mercury 
+	background-color: $white 
+	display: inline-block
+	&__line
+		position: absolute
+		left: 16px
+		width: 24px
+		height: 3px
+		transition: transform .3s, opacity .3s
+		background-color: $blue 
+		&:first-child 
+			top: 19px
+			transform-origin: top left
+			.is-open-menu &
+				transform: translate(4px,-1px) rotate(45deg)
+		&:nth-child(2)
+			top: 26px
+			transform-origin: left
+			.is-open-menu &
+				transform: scaleX(0)
+				opacity: 0
+		&:last-child
+			top: 33px
+			transform-origin: bottom left
+			.is-open-menu &
+				transform: translate(4px,1px) rotate(-45deg)
+
+		
