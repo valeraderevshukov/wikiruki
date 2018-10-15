@@ -1,6 +1,65 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-facebook" viewBox="0 0 10 19">
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-arr-right" viewBox="0 0 17 11">
+    <title>
+        &#x2192;
+    </title>
+    <path d="M17.01 5.208l-5.486 5-1.112-1.204 3.31-2.963H.807V4.375H13.7l-3.288-2.94L11.524.208z" fill-rule="evenodd"/>
+</symbol><symbol id="icon-arrow-left" viewBox="0 0 15 25">
+    <title>
+        Arrow_left
+    </title>
+    <g fill-rule="evenodd">
+        <path d="M15 25h-5v-5h5z"/>
+        <path d="M15 5h-5V0h5z"/>
+        <path d="M10 20H5v-5h5z"/>
+        <path d="M10 10H5V5h5z"/>
+        <path d="M5 15H0v-5h5z"/>
+    </g>
+</symbol><symbol id="icon-arrow-right" viewBox="0 0 15 25">
+    <title>
+        Arrow_right
+    </title>
+    <g fill-rule="evenodd">
+        <path d="M0 0h5v5H0z"/>
+        <path d="M0 20h5v5H0z"/>
+        <path d="M5 5h5v5H5z"/>
+        <path d="M5 15h5v5H5z"/>
+        <path d="M10 10h5v5h-5z"/>
+    </g>
+</symbol><symbol id="icon-facebook" viewBox="0 0 10 19">
     <title>
         facebook
     </title>
     <path d="M9.766.157v2.946H8.014c-.64 0-1.071.134-1.295.402-.223.268-.335.67-.335 1.205v2.11h3.27l-.435 3.303H6.384v8.471H2.97v-8.47H.123V6.82H2.97V4.387c0-1.384.387-2.457 1.161-3.22C4.904.404 5.934.023 7.222.023c1.093 0 1.941.045 2.544.134z" fill-rule="evenodd"/>
+</symbol><symbol id="icon-heart-outline" viewBox="0 0 18 19">
+    <style>
+        .st0{fill:#b2b2b2}
+    </style>
+    <title>
+        Icon
+    </title>
+    <g id="Symbols">
+        <g id="Instr_card" transform="translate(-15 -326)">
+            <path class="st0" d="M24 344.5l-.7-.8c-.7-.7-1.4-1.5-2.2-2.2-3.6-3.5-6.1-6.2-6.1-9.7 0-3.2 2.4-5.8 5.4-5.8 1.3 0 2.6.5 3.6 1.4 1-.9 2.3-1.4 3.6-1.4 3 0 5.4 2.5 5.4 5.8 0 3.5-2.5 6.2-6.1 9.7l-2.2 2.2-.7.8zM20.4 328c-1.9 0-3.4 1.7-3.4 3.8 0 2.7 2.3 5.1 5.5 8.2l1.5 1.5 1.5-1.5c3.2-3.1 5.5-5.5 5.5-8.2 0-2.1-1.5-3.8-3.4-3.8-.9 0-1.8.4-2.5 1.1l-1.1 1.1-1.1-1.1c-.7-.7-1.6-1.1-2.5-1.1z" id="Icon"/>
+        </g>
+    </g>
+</symbol><symbol id="icon-heart" viewBox="0 0 18 19">
+    <style>
+        .st0{fill:none;stroke:#b2b2b2;stroke-width:2}
+    </style>
+    <title>
+        Icon
+    </title>
+    <g id="Symbols">
+        <g id="Instr_card" transform="translate(-15 -326)">
+            <path id="Icon" class="st0" d="M16 331.8c0 3.1 2.4 5.7 5.8 9 .8.7 1.5 1.5 2.2 2.3.7-.8 1.4-1.5 2.2-2.3 3.4-3.3 5.8-5.9 5.8-9 0-2.7-1.9-4.8-4.4-4.8-1.2 0-2.3.5-3.2 1.4l-.4.4-.4-.4c-.9-.9-2-1.4-3.2-1.4-2.5 0-4.4 2.1-4.4 4.8z"/>
+        </g>
+    </g>
+</symbol><symbol id="icon-search" viewBox="0 0 28 28">
+    <title>
+        Group Copy
+    </title>
+    <g fill-rule="nonzero">
+        <path d="M12.026 23.5C5.679 23.5.535 18.351.535 12S5.679.5 12.025.5C18.373.5 23.518 5.649 23.518 12s-5.145 11.5-11.491 11.5zm0-3c4.69 0 8.493-3.806 8.493-8.5s-3.802-8.5-8.493-8.5c-4.691 0-8.494 3.806-8.494 8.5s3.803 8.5 8.494 8.5z"/>
+        <path d="M17.4 19.5l7.772 7.778 2.12-2.121-7.772-7.778z"/>
+    </g>
 </symbol></svg>
