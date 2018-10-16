@@ -151,6 +151,10 @@
 				opacity: 1
 				visibility: visible
 	&__login
+		&:not(:last-child)
+			margin-right: 27px
+			+md
+				margin-left: 0
 		+md
 			display: none
 	&__inner
@@ -164,5 +168,97 @@
 		border-left: 1px solid $mercury 
 		+md
 			display: none
+	&__instruction
+		margin-right: 14px
+		+md
+			display: none
+
+.cabin
+	position: relative
+	font-size: 0
+	vertical-align: top
+	display: inline-block
+	&:not(:last-child)
+		margin-right: 14px
+	&__logo
+		width: 40px
+		height: 40px
+		border-radius: 50%
+		vertical-align: top
+		background-repeat: no-repeat
+		background-position: center 
+		background-size: cover
+		cursor: pointer
+		border: 1px solid #EFEFEF 
+		display: inline-block
+	&__has-info
+		position: absolute
+		top: 2px
+		right: 0
+		width: 10px
+		height: 10px
+		border: 2px solid $white
+		background-color: $blue 
+		border-radius: 50% 
+	&__drop
+		position: absolute
+		top: 100%
+		left: 50%
+		margin: 25px 0 0 -94px
+		padding: 2px 14px
+		width: 188px
+		opacity: 0
+		visibility: hidden
+		user-select: none
+		transition: opacity .3s, visibility .3s
+		box-shadow: 0 4px 20px rgba(0,0,0,.12)
+		border-radius: 8px
+		background-color: $white 
+		+md
+			margin-left: -110px
+		.cabin.is-open &
+			opacity: 1
+			visibility: visible
+		.icon-login-arrow
+			position: absolute
+			top: -6px
+			left: 50%
+			font-size: 7px
+			margin-left: -14px 
+			color: $white 
+			+md
+				margin-left: 2px 
+	&__item
+		display: block
 		&:not(:first-child)
-			margin-left: 27px
+			border-top: 1px solid $mercury 
+	&__link
+		padding: 13px 0
+		font-family: $walsheim
+		+f(15px,400,1.15)
+		color: $emperor 
+		font-size: 15px
+		display: flex
+		transition: color .3s
+		justify-content: space-between
+		flex-wrap: wrap
+		.cabin__item.is-active &
+			color: $dark
+			font-weight: 500  
+		.cabin__item.is-logout &
+			color: rgba($dark, 0.5)
+		+hover
+			color: $blue 
+	&__rating,
+	&__mess
+		margin-left: 10px
+	&__rating
+		font-weight: 400 
+		color: rgba($emperor, 0.5)
+		.icon
+			margin-top: 1px
+			font-size: 14px
+			vertical-align: top
+			display: inline-block
+	&__mess
+		color: $blue 

@@ -1,5 +1,7 @@
 ProjectTitle: template
 
 PageList:
-- file: page.html
-  ready: 50
+- file: main-no-authorized.html
+  ready: 100
+- file: main-authorized.html
+  ready: 100

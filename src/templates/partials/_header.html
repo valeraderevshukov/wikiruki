@@ -6,7 +6,7 @@
 		<div class="header__wrap">
 			<div class="header__left">
 				<!-- begin logo -->
-				<a href="#" class="logo">
+				<a href="./index.html" class="logo">
 					<span class="logo__icons">
 						<img src="./img/logo-icons.svg" alt="logo-icons">
 					</span>
@@ -33,10 +33,59 @@
 				</div>
 			</nav>
 			<div class="header__right">
+				{% if props.authorized %}
+				<a href="#" class="btn btn_rad btn_bord-sm btn_md header__instruction">Новая Инструкция</a>
+				<!-- begin cabin -->
+				<div class="cabin js-cabin">
+					<div class="cabin__logo js-cabin-trigger" style="background-image: url(./img/neo.png);">
+						<div class="cabin__has-info"></div>
+					</div>
+					<div class="cabin__drop">
+						{{ mixins.icon('login-arrow') }}
+						<ul class="cabin__list">
+							{% for item in [
+								{
+									active: true,
+									rating: true,
+									text: 'Константин'
+								},
+								{
+									text: 'Мой профиль'
+								},
+								{
+									text: 'Сообщения',
+									mess: '1'
+								},
+								{
+									text: 'Мои инструкции',
+									mess: '2'
+								},
+								{
+									text: 'Избранное'
+								},
+								{
+									text: 'Выйти',
+									logout: true
+								}
+							] %}
+							<li class="cabin__item{% if item.active %} is-active{% endif %} {% if item.logout %} is-logout{% endif %}">
+								<a href="#" class="cabin__link">
+									{{ item.text }}
+									{% if item.rating %} <span class="cabin__rating">4.81{{ mixins.icon('star') }}</span>{% endif %}
+									{% if item.mess %} <span class="cabin__mess">({{ item.mess }})</span>{% endif %}
+								</a>
+							</li>
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
+				<!-- end cabin -->
+				{% else %}
 				<div class="header__login login">
 					<div class="login__item"><a href="#" class="login__link">Вход</a></div>
 					<div class="login__item is-active"><a href="#" class="login__link">Регистрация</a></div>
 				</div>
+				{% endif %}
 				<div class="header__search search">
 					<button class="search__button" type="button">{{ mixins.icon('search') }}</button>
 				</div>
