@@ -113,27 +113,299 @@
         </div>
       </header>
       <!-- end header -->
-      <!-- begin hero -->
-      <div class="hero">
-        <div class="hero__inner inner">
-          <div class="hero__wrap">
-            <h1 class="hero__title title-lg color-dark"><span class="color-blue text-italic">Робот на Arduino</span> своими руками</h1>
-            <div class="hero__footer">
-              <a href="#" class="hero__btn btn">Смотреть уроки</a>
-              <div class="hero__separator">или</div>
-              <a href="#" class="hero__btn btn btn_transparent"><span class="btn__text">сделать инструкцию</span></a>
+      <!-- begin hero-slider -->
+      <div class="hero-slider js-hero-slider">
+        <div class="hero-slider__slide">
+          <div class="hero-slider__wrap" style="background-image: url(./img/slider-hero-img.jpg);">
+            <div class="hero-slider__inner inner">
+              <div class="hero-slider__label">Инструкция дня</div>
+              <h1 class="hero-slider__title title-lg">Моднейший стол1 <br> без единого гвоздя</h1>
             </div>
           </div>
-          <div class="hero__img">
-            <img src="./img/hero-img.png" alt="img">
+        </div>
+        <div class="hero-slider__slide">
+          <div class="hero-slider__wrap" style="background-image: url(./img/slider-hero-img.jpg);">
+            <div class="hero-slider__inner inner">
+              <div class="hero-slider__label">Инструкция дня</div>
+              <h1 class="hero-slider__title title-lg">Моднейший стол2 <br> без единого гвоздя</h1>
+            </div>
+          </div>
+        </div>
+        <div class="hero-slider__slide">
+          <div class="hero-slider__wrap" style="background-image: url(./img/slider-hero-img.jpg);">
+            <div class="hero-slider__inner inner">
+              <div class="hero-slider__label">Инструкция дня</div>
+              <h1 class="hero-slider__title title-lg">Моднейший стол3 <br> без единого гвоздя</h1>
+            </div>
           </div>
         </div>
       </div>
-      <!-- end hero -->
+      <!-- end hero-slider -->
       <!-- begin popular -->
       <div class="popular">
         <div class="popular__inner inner">
-          <h2 class="popular__title-md title-md">Популярное за неделю:</h2>
+          <h2 class="popular__title-md title-md">🍜 Еда и напитки — новое</h2>
+          <div class="popular__slider slider js-slider">
+            <div class="slider__slide">
+              <!-- begin item -->
+              <div class="item">
+                <a href="#" class="item__out">
+                  <div class="item__img" style="background-image: url('./img/item-img.jpg')"></div>
+                  <div class="item__wrap">
+                    <div class="item__category">еда и напитки</div>
+                    <div class="item__title">Готовим вкусный шашлык на мангале из кирпичей</div>
+                  </div>
+                </a>
+                <div class="item__footer">
+                  <!-- begin like -->
+                  <label class="like">
+                    <input type="checkbox">
+                    <svg class="icon icon-heart-outline">
+                      <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                    </svg>
+                    <svg class="icon icon-heart">
+                      <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    </svg>
+                    <span class="like__quantity">18</span>
+                  </label>
+                  <!-- end like -->
+                </div>
+              </div>
+              <!-- end item -->
+            </div>
+            <div class="slider__slide">
+              <!-- begin item -->
+              <div class="item">
+                <a href="#" class="item__out">
+                  <div class="item__img" style="background-image: url('./img/item-img.jpg')"></div>
+                  <div class="item__wrap">
+                    <div class="item__category">еда и напитки</div>
+                    <div class="item__title">Легкий способ открыть вино без штопора и карандаша</div>
+                  </div>
+                </a>
+                <div class="item__footer">
+                  <!-- begin like -->
+                  <label class="like">
+                    <input type="checkbox">
+                    <svg class="icon icon-heart-outline">
+                      <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                    </svg>
+                    <svg class="icon icon-heart">
+                      <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    </svg>
+                    <span class="like__quantity">18</span>
+                  </label>
+                  <!-- end like -->
+                </div>
+              </div>
+              <!-- end item -->
+            </div>
+            <div class="slider__slide">
+              <!-- begin item -->
+              <div class="item">
+                <a href="#" class="item__out">
+                  <div class="item__img" style="background-image: url('./img/item-img.jpg')"></div>
+                  <div class="item__wrap">
+                    <div class="item__category">роботы</div>
+                    <div class="item__title">Как вывести биткоины на карту Сбербанка быстро, без комиссии и посредников</div>
+                  </div>
+                </a>
+                <div class="item__footer">
+                  <!-- begin like -->
+                  <label class="like">
+                    <input type="checkbox">
+                    <svg class="icon icon-heart-outline">
+                      <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                    </svg>
+                    <svg class="icon icon-heart">
+                      <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    </svg>
+                    <span class="like__quantity">18</span>
+                  </label>
+                  <!-- end like -->
+                </div>
+              </div>
+              <!-- end item -->
+            </div>
+            <div class="slider__slide">
+              <!-- begin item -->
+              <div class="item">
+                <a href="#" class="item__out">
+                  <div class="item__img" style="background-image: url('./img/item-img.jpg')"></div>
+                  <div class="item__wrap">
+                    <div class="item__category">авто-мото</div>
+                    <div class="item__title">Противоугонная система для Мазды 3 своими руками</div>
+                  </div>
+                </a>
+                <div class="item__footer">
+                  <!-- begin like -->
+                  <label class="like">
+                    <input type="checkbox">
+                    <svg class="icon icon-heart-outline">
+                      <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                    </svg>
+                    <svg class="icon icon-heart">
+                      <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    </svg>
+                    <span class="like__quantity">18</span>
+                  </label>
+                  <!-- end like -->
+                </div>
+              </div>
+              <!-- end item -->
+            </div>
+            <div class="slider__slide">
+              <!-- begin item -->
+              <div class="item">
+                <a href="#" class="item__out">
+                  <div class="item__img" style="background-image: url('./img/item-img.jpg')"></div>
+                  <div class="item__wrap">
+                    <div class="item__category">еда и напитки</div>
+                    <div class="item__title">Готовим вкусный шашлык на мангале из кирпичей</div>
+                  </div>
+                </a>
+                <div class="item__footer">
+                  <!-- begin like -->
+                  <label class="like">
+                    <input type="checkbox">
+                    <svg class="icon icon-heart-outline">
+                      <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                    </svg>
+                    <svg class="icon icon-heart">
+                      <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    </svg>
+                    <span class="like__quantity">18</span>
+                  </label>
+                  <!-- end like -->
+                </div>
+              </div>
+              <!-- end item -->
+            </div>
+            <div class="slider__slide">
+              <!-- begin item -->
+              <div class="item">
+                <a href="#" class="item__out">
+                  <div class="item__img" style="background-image: url('./img/item-img.jpg')"></div>
+                  <div class="item__wrap">
+                    <div class="item__category">еда и напитки</div>
+                    <div class="item__title">Легкий способ открыть вино без штопора и карандаша</div>
+                  </div>
+                </a>
+                <div class="item__footer">
+                  <!-- begin like -->
+                  <label class="like">
+                    <input type="checkbox">
+                    <svg class="icon icon-heart-outline">
+                      <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                    </svg>
+                    <svg class="icon icon-heart">
+                      <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    </svg>
+                    <span class="like__quantity">18</span>
+                  </label>
+                  <!-- end like -->
+                </div>
+              </div>
+              <!-- end item -->
+            </div>
+            <div class="slider__slide">
+              <!-- begin item -->
+              <div class="item">
+                <a href="#" class="item__out">
+                  <div class="item__img" style="background-image: url('./img/item-img.jpg')"></div>
+                  <div class="item__wrap">
+                    <div class="item__category">роботы</div>
+                    <div class="item__title">Как вывести биткоины на карту Сбербанка быстро, без комиссии и посредников</div>
+                  </div>
+                </a>
+                <div class="item__footer">
+                  <!-- begin like -->
+                  <label class="like">
+                    <input type="checkbox">
+                    <svg class="icon icon-heart-outline">
+                      <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                    </svg>
+                    <svg class="icon icon-heart">
+                      <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    </svg>
+                    <span class="like__quantity">18</span>
+                  </label>
+                  <!-- end like -->
+                </div>
+              </div>
+              <!-- end item -->
+            </div>
+            <div class="slider__slide">
+              <!-- begin item -->
+              <div class="item">
+                <a href="#" class="item__out">
+                  <div class="item__img" style="background-image: url('./img/item-img.jpg')"></div>
+                  <div class="item__wrap">
+                    <div class="item__category">авто-мото</div>
+                    <div class="item__title">Противоугонная система для Мазды 3 своими руками</div>
+                  </div>
+                </a>
+                <div class="item__footer">
+                  <!-- begin like -->
+                  <label class="like">
+                    <input type="checkbox">
+                    <svg class="icon icon-heart-outline">
+                      <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                    </svg>
+                    <svg class="icon icon-heart">
+                      <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    </svg>
+                    <span class="like__quantity">18</span>
+                  </label>
+                  <!-- end like -->
+                </div>
+              </div>
+              <!-- end item -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end popular -->
+      <!-- begin top -->
+      <div class="top">
+        <div class="top__inner inner">
+          <h2 class="top__title-md title-md">Топ классов</h2>
+          <div class="top__row row">
+            <div class="top__col col-lg-4">
+              <!-- begin class -->
+              <a href="#" class="class" style="background-image: url('./img/class-mg-1.jpg');">
+                <div class="class__quantity">5294 Участника</div>
+                <div class="class__title">Выпекаем ништяки</div>
+              </a>
+              <!-- end class -->
+            </div>
+            <div class="top__col col-lg-4">
+              <!-- begin class -->
+              <a href="#" class="class" style="background-image: url('./img/class-mg-1.jpg');">
+                <div class="class__quantity">5294 Участника</div>
+                <div class="class__title">Выпекаем ништяки</div>
+              </a>
+              <!-- end class -->
+            </div>
+            <div class="top__col col-lg-4">
+              <!-- begin class -->
+              <a href="#" class="class" style="background-image: url('./img/class-mg-1.jpg');">
+                <div class="class__quantity">5294 Участника</div>
+                <div class="class__title">Выпекаем ништяки</div>
+              </a>
+              <!-- end class -->
+            </div>
+          </div>
+          <div class="top__footer">
+            <a href="#" class="btn btn_lg btn_bord-sm btn_bord-gray">все классы</a>
+          </div>
+        </div>
+      </div>
+      <!-- end top -->
+      <!-- begin popular -->
+      <div class="popular">
+        <div class="popular__inner inner">
+          <h2 class="popular__title-md title-md">🏡 Дом и быт — новое</h2>
           <div class="popular__slider slider js-slider">
             <div class="slider__slide">
               <!-- begin item -->
@@ -353,185 +625,213 @@
             </div>
           </div>
           <div class="popular__footer">
-            <a href="#" class="btn btn_lg btn_bord-sm btn_bord-gray">Смотреть все инструкции</a>
+            <a href="#" class="btn btn_lg btn_bord-sm btn_bord-gray">новинки других категорий</a>
           </div>
         </div>
       </div>
       <!-- end popular -->
-      <!-- begin top -->
-      <div class="top">
-        <div class="top__inner inner">
-          <h2 class="top__title-md title-md">Топ классов</h2>
-          <div class="top__row row">
-            <div class="top__col col-lg-4">
-              <!-- begin class -->
-              <a href="#" class="class" style="background-image: url('./img/class-mg-1.jpg');">
-                <div class="class__quantity">5294 Участника</div>
-                <div class="class__title">Выпекаем ништяки</div>
+      <!-- begin contest -->
+      <div class="contests">
+        <div class="contests__inner inner">
+          <h3 class="contests__title title-md">Конкурсы</h3>
+          <div class="contests__row row">
+            <div class="contests__col col-lg-6">
+              <a href="#" class="contest contest_blue">
+                <div class="contest__wrap">
+                  <div class="contest__label">Осталось 4 дня!</div>
+                  <div class="contest__bottom">
+                    <h3 class="contest__title title-md">Космическая одиссея 2018</h3>
+                    <div class="contest__prize">Главный приз — iPad Pro</div>
+                  </div>
+                </div>
+                <div class="contest__img">
+                  <img src="./img/contest-img-1.png" alt="img">
+                </div>
               </a>
-              <!-- end class -->
             </div>
-            <div class="top__col col-lg-4">
-              <!-- begin class -->
-              <a href="#" class="class" style="background-image: url('./img/class-mg-1.jpg');">
-                <div class="class__quantity">5294 Участника</div>
-                <div class="class__title">Выпекаем ништяки</div>
+            <div class="contests__col col-lg-6">
+              <a href="#" class="contest contest_brown">
+                <div class="contest__wrap">
+                  <div class="contest__label">Осталось 12 дней</div>
+                  <div class="contest__bottom">
+                    <h3 class="contest__title title-md">Кулинарный поединок</h3>
+                    <div class="contest__prize">12 призов</div>
+                  </div>
+                </div>
+                <div class="contest__img">
+                  <img src="./img/contest-img-2.png" alt="img">
+                </div>
               </a>
-              <!-- end class -->
             </div>
-            <div class="top__col col-lg-4">
-              <!-- begin class -->
-              <a href="#" class="class" style="background-image: url('./img/class-mg-1.jpg');">
-                <div class="class__quantity">5294 Участника</div>
-                <div class="class__title">Выпекаем ништяки</div>
+            <div class="contests__col col-lg-6">
+              <a href="#" class="contest contest_purple">
+                <div class="contest__wrap">
+                  <div class="contest__label">Осталось 26 дней</div>
+                  <div class="contest__bottom">
+                    <h3 class="contest__title title-md">Шансон-контест «Три аккорда»</h3>
+                    <div class="contest__prize">4 приза</div>
+                  </div>
+                </div>
+                <div class="contest__img">
+                  <img src="./img/contest-img-3.png" alt="img">
+                </div>
               </a>
-              <!-- end class -->
+            </div>
+            <div class="contests__col col-lg-6">
+              <a href="#" class="contest contest_light-blue">
+                <div class="contest__wrap">
+                  <div class="contest__label">Осталось 32 дня</div>
+                  <div class="contest__bottom">
+                    <h3 class="contest__title title-md">Экономный туризм</h3>
+                    <div class="contest__prize">12 призов</div>
+                  </div>
+                </div>
+                <div class="contest__img">
+                  <img src="./img/contest-img-4.png" alt="img">
+                </div>
+              </a>
             </div>
           </div>
-          <div class="top__footer">
-            <a href="#" class="btn btn_lg btn_bord-sm btn_bord-gray">все классы</a>
+          <div class="contests__footer buttons-footer">
+            <a href="#" class="btn btn_lg btn_bord-sm btn_bord-gray">Смотреть все конкурсы</a>
           </div>
         </div>
       </div>
-      <!-- end top -->
-      <!-- begin instructions -->
-      <div class="instructions" style="background-image: url(./img/instructions-img.png);">
-        <div class="instructions__inner inner">
-          <div class="instructions__wrap">
-            <h3 class="instructions__title title-md">Инструкции на все случаи жизни</h3>
-            <p>Энциклопедия практических знаний WikiRuki помогает решать повседневные, бытовые задачи. Здесь мы делимся своим опытом, рассказывая, как правильно готовить, строить, программировать, чинить, и многое-многое другое.</p>
-          </div>
-          <div class="instructions__footer">
-            <a href="#" class="btn btn_blue">СОЗДАТЬ АККАУНТ</a>
-          </div>
-        </div>
-      </div>
-      <!-- end instructions -->
+      <!-- end contest -->
       <!-- begin сategories -->
       <div class="categories">
-        <div class="categories__inner inner">
+        <div class="categories__inner inner js-drop">
           <h3 class="categories__title title-md">Категории</h3>
-          <div class="categories__row row">
-            <div class="categories__col col-md-4">
-              <!-- begin category -->
-              <a href="#" class="category">
-                <span class="category__name">Еда и напитки</span>
-                <span class="category__img">
-                  <img src="./img/categories/car.png" alt="img">
-                </span>
-              </a>
-              <!-- end category -->
+          <div class="js-drop-wrap">
+            <div class="categories__row row js-drop-shows">
+              <div class="categories__col col-md-4">
+                <!-- begin category -->
+                <a href="#" class="category">
+                  <span class="category__name">Еда и напитки</span>
+                  <span class="category__img">
+                    <img src="./img/categories/car.png" alt="img">
+                  </span>
+                </a>
+                <!-- end category -->
+              </div>
+              <div class="categories__col col-md-4">
+                <!-- begin category -->
+                <a href="#" class="category">
+                  <span class="category__name">Авто-мото</span>
+                  <span class="category__img">
+                    <img src="./img/categories/car.png" alt="img">
+                  </span>
+                </a>
+                <!-- end category -->
+              </div>
+              <div class="categories__col col-md-4">
+                <!-- begin category -->
+                <a href="#" class="category">
+                  <span class="category__name">Образование</span>
+                  <span class="category__img">
+                    <img src="./img/categories/car.png" alt="img">
+                  </span>
+                </a>
+                <!-- end category -->
+              </div>
             </div>
-            <div class="categories__col col-md-4">
-              <!-- begin category -->
-              <a href="#" class="category">
-                <span class="category__name">Авто-мото</span>
-                <span class="category__img">
-                  <img src="./img/categories/car.png" alt="img">
-                </span>
-              </a>
-              <!-- end category -->
+            <div class="categories__row categories__row_sm-hide row js-drop-hidden">
+              <div class="categories__col col-md-4">
+                <!-- begin category -->
+                <a href="#" class="category">
+                  <span class="category__name">Техника</span>
+                  <span class="category__img">
+                    <img src="./img/categories/car.png" alt="img">
+                  </span>
+                </a>
+                <!-- end category -->
+              </div>
+              <div class="categories__col col-md-4">
+                <!-- begin category -->
+                <a href="#" class="category">
+                  <span class="category__name">Роботы</span>
+                  <span class="category__img">
+                    <img src="./img/categories/car.png" alt="img">
+                  </span>
+                </a>
+                <!-- end category -->
+              </div>
+              <div class="categories__col col-md-4">
+                <!-- begin category -->
+                <a href="#" class="category">
+                  <span class="category__name">Спорт и ЗОЖ</span>
+                  <span class="category__img">
+                    <img src="./img/categories/car.png" alt="img">
+                  </span>
+                </a>
+                <!-- end category -->
+              </div>
+              <div class="categories__col col-md-4">
+                <!-- begin category -->
+                <a href="#" class="category">
+                  <span class="category__name">Дом и быт</span>
+                  <span class="category__img">
+                    <img src="./img/categories/car.png" alt="img">
+                  </span>
+                </a>
+                <!-- end category -->
+              </div>
+              <div class="categories__col col-md-4">
+                <!-- begin category -->
+                <a href="#" class="category">
+                  <span class="category__name">Фотография</span>
+                  <span class="category__img">
+                    <img src="./img/categories/car.png" alt="img">
+                  </span>
+                </a>
+                <!-- end category -->
+              </div>
+              <div class="categories__col col-md-4">
+                <!-- begin category -->
+                <a href="#" class="category">
+                  <span class="category__name">Красота</span>
+                  <span class="category__img">
+                    <img src="./img/categories/car.png" alt="img">
+                  </span>
+                </a>
+                <!-- end category -->
+              </div>
+              <div class="categories__col col-md-4">
+                <!-- begin category -->
+                <a href="#" class="category">
+                  <span class="category__name">Музыка</span>
+                  <span class="category__img">
+                    <img src="./img/categories/car.png" alt="img">
+                  </span>
+                </a>
+                <!-- end category -->
+              </div>
+              <div class="categories__col col-md-4">
+                <!-- begin category -->
+                <a href="#" class="category">
+                  <span class="category__name">Хобби (крафт)</span>
+                  <span class="category__img">
+                    <img src="./img/categories/car.png" alt="img">
+                  </span>
+                </a>
+                <!-- end category -->
+              </div>
+              <div class="categories__col col-md-4">
+                <!-- begin category -->
+                <a href="#" class="category">
+                  <span class="category__name">Игры</span>
+                  <span class="category__img">
+                    <img src="./img/categories/car.png" alt="img">
+                  </span>
+                </a>
+                <!-- end category -->
+              </div>
             </div>
-            <div class="categories__col col-md-4">
-              <!-- begin category -->
-              <a href="#" class="category">
-                <span class="category__name">Образование</span>
-                <span class="category__img">
-                  <img src="./img/categories/car.png" alt="img">
-                </span>
-              </a>
-              <!-- end category -->
-            </div>
-            <div class="categories__col col-md-4">
-              <!-- begin category -->
-              <a href="#" class="category">
-                <span class="category__name">Техника</span>
-                <span class="category__img">
-                  <img src="./img/categories/car.png" alt="img">
-                </span>
-              </a>
-              <!-- end category -->
-            </div>
-            <div class="categories__col col-md-4">
-              <!-- begin category -->
-              <a href="#" class="category">
-                <span class="category__name">Роботы</span>
-                <span class="category__img">
-                  <img src="./img/categories/car.png" alt="img">
-                </span>
-              </a>
-              <!-- end category -->
-            </div>
-            <div class="categories__col col-md-4">
-              <!-- begin category -->
-              <a href="#" class="category">
-                <span class="category__name">Спорт и ЗОЖ</span>
-                <span class="category__img">
-                  <img src="./img/categories/car.png" alt="img">
-                </span>
-              </a>
-              <!-- end category -->
-            </div>
-            <div class="categories__col col-md-4">
-              <!-- begin category -->
-              <a href="#" class="category">
-                <span class="category__name">Дом и быт</span>
-                <span class="category__img">
-                  <img src="./img/categories/car.png" alt="img">
-                </span>
-              </a>
-              <!-- end category -->
-            </div>
-            <div class="categories__col col-md-4">
-              <!-- begin category -->
-              <a href="#" class="category">
-                <span class="category__name">Фотография</span>
-                <span class="category__img">
-                  <img src="./img/categories/car.png" alt="img">
-                </span>
-              </a>
-              <!-- end category -->
-            </div>
-            <div class="categories__col col-md-4">
-              <!-- begin category -->
-              <a href="#" class="category">
-                <span class="category__name">Красота</span>
-                <span class="category__img">
-                  <img src="./img/categories/car.png" alt="img">
-                </span>
-              </a>
-              <!-- end category -->
-            </div>
-            <div class="categories__col col-md-4">
-              <!-- begin category -->
-              <a href="#" class="category">
-                <span class="category__name">Музыка</span>
-                <span class="category__img">
-                  <img src="./img/categories/car.png" alt="img">
-                </span>
-              </a>
-              <!-- end category -->
-            </div>
-            <div class="categories__col col-md-4">
-              <!-- begin category -->
-              <a href="#" class="category">
-                <span class="category__name">Хобби (крафт)</span>
-                <span class="category__img">
-                  <img src="./img/categories/car.png" alt="img">
-                </span>
-              </a>
-              <!-- end category -->
-            </div>
-            <div class="categories__col col-md-4">
-              <!-- begin category -->
-              <a href="#" class="category">
-                <span class="category__name">Игры</span>
-                <span class="category__img">
-                  <img src="./img/categories/car.png" alt="img">
-                </span>
-              </a>
-              <!-- end category -->
-            </div>
+          </div>
+          <div class="categories__footer buttons-footer">
+            <button class="btn btn_lg btn_bord-sm btn_bord-gray js-open-drop" type="button" data-text-open="все категории" data-text-close="СВЕРНУТЬ">
+              <span class="js-drop-btn-text"></span>
+            </button>
           </div>
         </div>
       </div>
