@@ -1,0 +1,57 @@
+<!-- begin contest -->
+<div class="contests">
+	<div class="contests__inner inner">
+		<h3 class="contests__title title-md">Конкурсы</h3>
+		<div class="contests__row row">
+			{% for item in [
+				{
+					class: 'blue',
+					label: 'Осталось 4 дня!',
+					title: 'Космическая одиссея 2018',
+					prize: 'Главный приз — iPad Pro',
+					img: 'contest-img-1.png'
+				},
+				{
+					class: 'brown',
+					label: 'Осталось 12 дней',
+					title: 'Кулинарный поединок',
+					prize: '12 призов',
+					img: 'contest-img-2.png'
+				},
+				{
+					class: 'purple',
+					label: 'Осталось 26 дней',
+					title: 'Шансон-контест «Три аккорда»',
+					prize: '4 приза',
+					img: 'contest-img-3.png'
+				},
+				{
+					class: 'light-blue',
+					label: 'Осталось 32 дня',
+					title: 'Экономный туризм',
+					prize: '12 призов',
+					img: 'contest-img-4.png'
+				}
+			] %}
+			<div class="contests__col col-lg-6">
+				<a href="#" class="contest{% if item.class %} contest_{{ item.class }}{% endif %}">
+					<div class="contest__wrap">
+						<div class="contest__label">{{ item.label }}</div>
+						<div class="contest__bottom">
+							<h3 class="contest__title title-md">{{ item.title }}</h3>
+							<div class="contest__prize">{{ item.prize }}</div>
+						</div>
+					</div>
+					<div class="contest__img">
+						<img src="./img/{{ item.img }}" alt="img">
+					</div>
+				</a>
+			</div>
+			{% endfor %}
+		</div>
+		<div class="contests__footer buttons-footer">
+			<a href="#" class="btn btn_lg btn_bord-sm btn_bord-gray">Смотреть все конкурсы</a>
+		</div>
+	</div>
+</div>
+<!-- end contest -->

@@ -20,6 +20,19 @@ slider.slick({
   ]
 });
 
+const heroSlider = $('.js-hero-slider');
+heroSlider.slick({
+  arrows: false,
+  dots: true,
+  autoplay: true,
+  autoplaySpeed: 4000,
+  infinite: true,
+  speed: 700,
+  fade: true,
+  cssEase: 'linear',
+  pauseOnHover: false
+});
+
 DOC.ready(() => {
   let timeOut;
   let arrayHref = [];

@@ -1,0 +1,14 @@
+<!-- begin hero-slider -->
+<div class="hero-slider js-hero-slider">
+	{% for i in range(0,3) %}
+	<div class="hero-slider__slide">
+		<div class="hero-slider__wrap" style="background-image: url(./img/slider-hero-img.jpg);">
+			<div class="hero-slider__inner inner">
+				<div class="hero-slider__label">Инструкция дня</div>
+				<h1 class="hero-slider__title title-lg">Моднейший стол{{i + 1}} <br> без единого гвоздя</h1>
+			</div>
+		</div>
+	</div>
+	{% endfor %}
+</div>
+<!-- end hero-slider -->

@@ -1,19 +1,33 @@
 .categories
-	padding: 103px 0 80px
+	padding: 55px 0 80px
 	overflow: hidden
 	+md
-		padding: 55px 0 15px
+		padding: 20px 0 55px
 	&__title
 		margin-bottom: 33px
 		+md
 			margin-bottom: 15px
 	&__row
 		margin: 0 -20px
+		+md
+			margin: 0 -15px
+		&_sm-hide
+			display: none
+			+rmin(767)
+				display: flex !important
+				
 	&__col
 		padding: 0 20px
 		margin-bottom: 40px
+		+md
+			padding: 0 15px
 		+sm
 			margin-bottom: 15px
+	&__footer
+		display: none
+		+sm
+			margin-top: 10px
+			display: block
 
 .category
 	padding-left: 30px
@@ -29,6 +43,8 @@
 	+hover
 		color: $black 
 		box-shadow: 0 4px 20px rgba($black, .12) 
+	+md
+		padding-left: 20px
 	+sm
 		min-height: 70px
 	&__name

@@ -1,52 +1,69 @@
 <!-- begin сategories -->
 <div class="categories">
-	<div class="categories__inner inner">
+	<div class="categories__inner inner js-drop">
 		<h3 class="categories__title title-md">Категории</h3>
-		<div class="categories__row row">
-			{% for category in [
-				{
-					name: 'Еда и напитки'
-				},
-				{
-					name: 'Авто-мото'
-				},
-				{
-					name: 'Образование'
-				},
-				{
-					name: 'Техника'
-				},
-				{
-					name: 'Роботы'
-				},
-				{
-					name: 'Спорт и ЗОЖ'
-				},
-				{
-					name: 'Дом и быт'
-				},
-				{
-					name: 'Фотография'
-				},
-				{
-					name: 'Красота'
-				},
-				{
-					name: 'Музыка'
-				},
-				{
-					name: 'Хобби (крафт)'
-				},
-				{
-					name: 'Игры'
-				}
-			] %}
-				<div class="categories__col col-md-4">
-					{{ mixins.category({
-						name: category.name
-					}) }}
-				</div>
-			{% endfor %}
+		<div class="js-drop-wrap">
+			<div class="categories__row row js-drop-shows">
+				{% for category in [
+					{
+						name: 'Еда и напитки'
+					},
+					{
+						name: 'Авто-мото'
+					},
+					{
+						name: 'Образование'
+					}
+				] %}
+					<div class="categories__col col-md-4">
+						{{ mixins.category({
+							name: category.name
+						}) }}
+					</div>
+				{% endfor %}
+			</div>
+			<div class="categories__row categories__row_sm-hide row js-drop-hidden">
+				{% for category in [
+					{
+						name: 'Техника'
+					},
+					{
+						name: 'Роботы'
+					},
+					{
+						name: 'Спорт и ЗОЖ'
+					},
+					{
+						name: 'Дом и быт'
+					},
+					{
+						name: 'Фотография'
+					},
+					{
+						name: 'Красота'
+					},
+					{
+						name: 'Музыка'
+					},
+					{
+						name: 'Хобби (крафт)'
+					},
+					{
+						name: 'Игры'
+					}
+				] %}
+					<div class="categories__col col-md-4">
+						{{ mixins.category({
+							name: category.name
+						}) }}
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+		<div class="categories__footer buttons-footer">
+			<button class="btn btn_lg btn_bord-sm btn_bord-gray js-open-drop" type="button" data-text-open="все категории" data-text-close="СВЕРНУТЬ">
+				<span class="js-drop-btn-text"></span>
+			</button>
 		</div>
 	</div>
 </div>

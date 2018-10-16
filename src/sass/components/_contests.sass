@@ -1,0 +1,78 @@
+.contests
+	padding: 52px 0
+	+md
+		padding: 25px 0
+	&__title
+		margin-bottom: 45px
+		+md
+			margin-bottom: 15px
+	&__row
+		margin: 0 -20px
+		+md
+			margin: 0 -15px
+	&__col
+		padding: 0 20px
+		margin-bottom: 40px
+		+md
+			margin-bottom: 15px
+			padding: 0 15px
+	&__footer
+		margin-top: 0
+		+md
+			margin-top: 10px
+.contest
+	display: flex
+	height: 300px
+	overflow: hidden
+	justify-content: space-between
+	color: $white 
+	background-color: $gallery 
+	+sm
+		height: 144px
+	&_blue
+		background-image: linear-gradient(42deg, #2739A8 0%, #0A0750 87%)
+	&_brown
+		background-image: linear-gradient(42deg, #BBA534 0%, #EBD52C 83%)
+	&_purple
+		background-image: linear-gradient(223deg, #8620E5 14%, #78026A 100%)
+	&_light-blue
+		background-image: linear-gradient(37deg, #32A7DF 6%, #ECECEC 80%)
+	&__wrap
+		padding: 24px 8px 24px 30px
+		flex: 0 0 48%
+		max-width: 48%
+		height: 100%
+		display: flex
+		flex-wrap: wrap
+		+sm
+			padding: 9px 5px 8px 10px
+			flex: 0 0 calc(100% - 108px)
+			max-width: calc(100% - 108px)
+	&__bottom
+		margin-top: 15px
+		align-self: flex-end
+		width: 100%
+	&__label
+		font-size: 14px
+		+sm
+			font-size: 10px
+	&__prize
+		margin-top: 10px
+		font-size: 14px
+		+sm
+			margin-top: 5px
+			font-size: 10px
+	&__img
+		padding: 31px 25px 0 0
+		flex: 0 0 52%
+		max-width: 52%
+		+sm
+			margin-right: -25px 
+			padding: 23px 0 0
+			flex: 0 0 133px
+			max-width: 133px
+			align-self: flex-end
+		img
+			margin: 0 auto
+			max-width: 100%
+			display: block
