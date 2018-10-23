@@ -27,11 +27,17 @@ gulp.task('copy:img', function() {
         ])
         .pipe(gulp.dest(config.dest.img));
 });
+gulp.task('copy:json', function() {
+    return gulp
+        .src(config.src.json + '/*.*')
+        .pipe(gulp.dest(config.dest.json));
+});
+
 
 gulp.task('copy', [
     'copy:img',
     // 'copy:rootfiles',
-    // 'copy:lib',
+    'copy:json',
     'copy:fonts'
 ]);
 gulp.task('copy:watch', function() {

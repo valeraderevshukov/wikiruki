@@ -23,8 +23,18 @@
 {% macro checkbox(props) %}
 <!-- begin input -->
 <label class="{% if props.radio %}radio{% else %}checkbox{% endif %}{% if props.class %} {{ props.class }}{% endif %}">
-	<input type="{% if props.radio %}radio{% else %}checkbox{% endif %}" name="{{ props.name or 'checkbox' }}"{% if props.checked %} checked{% endif %}>
-	<span class="{% if props.radio %}radio{% else %}checkbox{% endif %}__text">{{ props.text or 'checkbox' }}</span>
+	<input type="{% if props.radio %}radio{% else %}checkbox{% endif %}" {%if props.jsHook %} class="{{props.jsHook}}"{% endif %} name="{{ props.name or 'checkbox' }}"{% if props.checked %} checked{% endif %}>
+	<span class="{% if props.radio %}radio{% else %}checkbox{% endif %}__text">{{ props.text | safe or 'checkbox' }}</span>
+	{% if props.icon %} <span class="{% if props.radio %}radio{% else %}checkbox{% endif %}__icon">{{ icon('check') }}</span> {% endif %}
+</label>
+<!-- end input -->
+{% endmacro %}
+
+{% macro checkboxRadio(props) %}
+<!-- begin input -->
+<label class="{% if props.class %} {{ props.class }}{% endif %}">
+	<input type="checkbox" {%if props.jsHook %} class="{{props.jsHook}}"{% endif %} name="{{ props.name or 'checkbox' }}"{% if props.checked %} checked{% endif %}>
+	<span class="{% if props.class %}{{ props.class }}{% endif %}__text">{{ props.text or 'checkbox' }}</span>
 </label>
 <!-- end input -->
 {% endmacro %}
@@ -77,3 +87,28 @@
 <!-- end category -->
 {% endmacro %}
 
+{% macro steps(props) %}
+<!-- begin steps -->
+<ul class="steps">
+	{% for item in props.list %}
+	<li class="steps__item{% if item.class %} {{ item.class }}{% endif %}"><span class="steps__text">{{ item.text }}</span></li>
+	{% endfor %}
+</ul>
+<!-- end steps -->
+{% endmacro %}
+
+{% macro categ(props) %}
+	<!-- begin categ -->
+	<label class="categ">
+		<input type="radio" name="{{ props.name or 'radio' }}">
+		<span class="categ__text">{{ props.text }}</span>
+	</label>
+	<!-- end categ -->
+{% endmacro %}
+
+{% macro infoBlock(props) %}
+	<div class="info-block">
+		<div class="info-block__icon{% if props.color %} info-block__icon_{{ props.color }}{% endif %}">{{ icon(props.svg) }}</div>
+		<div class="info-block__text">{{ props.text }}</div>
+	</div>
+{% endmacro %}

@@ -1,0 +1,254 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Main - authorized</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css">
+  </head>
+
+  <body class="is-gray">
+    <!-- BEGIN content -->
+    <div class="out">
+      <!-- begin header -->
+      <header class="header js-header header_static">
+        <div class="header__inner inner">
+          <div class="header__wrap">
+            <div class="header__left">
+              <!-- begin logo -->
+              <a href="./index.html" class="logo">
+                <span class="logo__icons">
+                  <img src="./img/logo-icons.svg" alt="logo-icons">
+                </span>
+                <span class="logo__text">
+                  <img src="./img/logo-text.svg" alt="logo-text">
+                </span>
+              </a>
+              <!-- end logo -->
+            </div>
+            <nav class="header__nav nav js-nav">
+              <form action="#" class="nav__search nav-search js-nav-search">
+                <input type="text" class="nav-search__input" placeholder="Поиск по сайту">
+              </form>
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Инструкции</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Классы</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Конкурсы</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Вопрос-ответ</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Образование</a>
+                </li>
+              </ul>
+              <div class="nav__login login">
+                <div class="login__item"><a href="#" class="login__link">Вход</a></div>
+                <div class="login__item is-active"><a href="#" class="login__link">Регистрация</a></div>
+              </div>
+            </nav>
+            <div class="header__right">
+              <div class="header__login login">
+                <div class="login__item"><a href="#" class="login__link">Вход</a></div>
+                <div class="login__item is-active"><a href="#" class="login__link">Регистрация</a></div>
+              </div>
+              <div class="header__search search">
+                <button class="search__button" type="button">
+                  <svg class="icon icon-search">
+                    <use xlink:href="img/sprite.svg#icon-search"></use>
+                  </svg>
+                </button>
+              </div>
+              <button class="btn-menu js-btn-menu" type="button">
+                <span class="btn-menu__line"></span>
+                <span class="btn-menu__line"></span>
+                <span class="btn-menu__line"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- end header -->
+      <div class="inner">
+        <!-- begin steps -->
+        <ul class="steps">
+          <li class="steps__item"><span class="steps__text">1. Выберите категорию</span></li>
+          <li class="steps__item is-active"><span class="steps__text">2. Общая информация</span></li>
+          <li class="steps__item"><span class="steps__text">3. Опишите шаги</span></li>
+          <li class="steps__item"><span class="steps__text">4. Проверка и публикация</span></li>
+        </ul>
+        <!-- end steps -->
+      </div>
+      <div class="wrap">
+        <div class="inner inner_sm">
+          <form class="general-form">
+            <div class="general-form__control form-control">
+              <label class="form-control__label">название</label>
+              <input type="text" class="input input_lg" placeholder="Название Инструкции" value="Как подоить корову">
+            </div>
+            <div class="general-form__control form-control">
+              <label class="form-control__label form-control__label_top">обложка</label>
+              <div class="cover is-filled">
+                <label class="cover__label">
+                  <input type="file">
+                  <span class="cover__img"></span>
+                  <span class="cover__bg" style="background-image: url(../img/upload_placeholder.svg)"></span>
+                  <span class="cover__placeholder">обложка (перетащите сюда фото или видео)</span>
+                </label>
+                <div class="cover__btn-wrap">
+                  <!-- <div class="cover__btn"> -->
+                  <button class="btn btn_sm btn_bord-white cover__btn" type="button">удалить обложку</button>
+                  <!-- </div>
+				<div class="cover__btn"> -->
+                  <button class="btn btn_sm btn_bord-white cover__btn" type="button">выбрать другой файл</button>
+                  <!-- </div> -->
+                </div>
+              </div>
+            </div>
+            <div class="general-form__control form-control">
+              <label class="form-control__label form-control__label_top">описание</label>
+              <textarea class="input textarea general-form__textarea" placeholder="Описание (кратко)"></textarea>
+            </div>
+            <div class="general-form__control form-control">
+              <label class="form-control__label">теги</label>
+              <input type="text" data-role="tagsinput" placeholder="Ключевые, слова, через, запятую (необязательно)" value="Корова, Руки, Доить, Ферма">
+            </div>
+            <div class="general-form__control form-control">
+              <label class="form-control__label">материалы</label>
+              <input type="text" data-role="tagsinput-img" placeholder="Материалы (опционально)" value="Корова">
+            </div>
+            <div class="general-form__control form-control">
+              <label class="form-control__label">инструменты</label>
+              <input type="text" data-role="tagsinput-img" placeholder="Инструменты (опционально)" value="Ведро">
+            </div>
+            <div class="general-form__row row">
+              <div class="general-form__col col-md-6 col-sm-12">
+                <div class="form-control">
+                  <input type="text" class="input" placeholder="Финансовые затраты, &#8381">
+                </div>
+              </div>
+              <div class="general-form__col col-md-6 col-sm-12">
+                <div class="form-control">
+                  <input type="text" class="input" placeholder="Затраты по времени, ч">
+                </div>
+              </div>
+            </div>
+            <div class="general-form__control form-control">
+              <div class="general-form__wrap">
+                <!-- begin input -->
+                <label class=" radio">
+                  <input type="checkbox" class="js-age-limit" name="checkbox" checked>
+                  <span class="radio__text">Возрастное ограничение:</span>
+                </label>
+                <!-- end input -->
+                <div class="general-form__select js-age-limit-select">
+                  <select class="form-control select js-select" title="Выберите ограничение">
+                    <option value="1">16+</option>
+                    <option value="2">18+</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="general-form__submit form-control">
+              <button type="submit" class="btn btn_wide" disabled>далее</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- begin footer -->
+      <div class="footer">
+        <div class="footer__inner inner">
+          <div class="footer__top row">
+            <div class="footer__left col-md-6">
+              <div class="footer__title">E-mail рассылка</div>
+              <div class="footer__text">Оставь свой адрес e-mail и получи доступ к еженедельной рассылке лучших инструкций и новостей WikiRuki:</div>
+              <!-- begin subscribe -->
+              <form class="footer__subscribe subscribe">
+                <div class="subscribe__input">
+                  <input type="text" placeholder="Ваш e-mail">
+                </div>
+                <button class="subscribe__btn" type="button">ОТПРАВИТЬ <svg class="icon icon-arr-right">
+                    <use xlink:href="img/sprite.svg#icon-arr-right"></use>
+                  </svg>
+                </button>
+              </form>
+              <!-- end subscribe -->
+            </div>
+            <div class="footer__right col-md-6" data-accordion-group>
+              <div class="footer__row row">
+                <div class="footer__col col-md-4" data-accordion-item data-accordion-open data-accordion-on-init="768">
+                  <div class="footer__group">
+                    <div class="footer__title" data-accordion-trigger>Портал</div>
+                    <ul class="footer__list" data-accordion-container>
+                      <li class="footer__item"><a href="#" class="footer__link">Инструкции</a></li>
+                      <li class="footer__item"><a href="#" class="footer__link">Классы</a></li>
+                      <li class="footer__item"><a href="#" class="footer__link">Конкурсы</a></li>
+                      <li class="footer__item"><a href="#" class="footer__link">Вопрос-ответ</a></li>
+                      <li class="footer__item"><a href="#" class="footer__link">Образование</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer__col col-md-4" data-accordion-item data-accordion-on-init="768">
+                  <div class="footer__group">
+                    <div class="footer__title" data-accordion-trigger>О нас</div>
+                    <ul class="footer__list" data-accordion-container>
+                      <li class="footer__item"><a href="#" class="footer__link">Что такое WikiRuki?</a></li>
+                      <li class="footer__item"><a href="#" class="footer__link">Сотрудничество</a></li>
+                      <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+                      <li class="footer__item"><a href="#" class="footer__link">Вакансии</a></li>
+                      <li class="footer__item"><a href="#" class="footer__link">Часто задаваемые вопросы</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer__col col-md-4" data-accordion-item data-accordion-on-init="768">
+                  <div class="footer__group">
+                    <div class="footer__title" data-accordion-trigger>Мы в соцсетях</div>
+                    <ul class="footer__list" data-accordion-container>
+                      <li class="footer__item"><a href="#" class="footer__link">Вконтакте</a></li>
+                      <li class="footer__item"><a href="#" class="footer__link">Facebook</a></li>
+                      <li class="footer__item"><a href="#" class="footer__link">Youtube</a></li>
+                      <li class="footer__item"><a href="#" class="footer__link">Instagram</a></li>
+                      <li class="footer__item"><a href="#" class="footer__link">Pinterest</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__copy">
+              <a href="#" class="footer__logo logo-sm">
+                <img src="./img/logo-sm.svg" alt="img">
+              </a>
+              <div class="copy">Copyright WikiRuki &copy; 2018</div>
+            </div>
+            <div class="footer__policy">
+              <a href="#" class="footer__link">Пользовательское соглашение</a>
+              <a href="#" class="footer__link">Политика конфиденциальности</a>
+              <a href="#" class="footer__link">Термины и положения</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end footer -->
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END scripts -->
+  </body>
+
+</html>

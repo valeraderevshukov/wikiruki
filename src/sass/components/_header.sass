@@ -129,6 +129,12 @@
 	+md
 		top: 0
 		font-size: 20px
+	&_static
+		position: relative
+		top: 0
+		padding: 30px 0
+		+md
+			padding-top: 0
 	&__wrap
 		display: flex
 		flex-wrap: wrap
@@ -147,6 +153,8 @@
 			visibility: hidden
 			transition: opacity .3s, visibility .3s
 			background-color: $white
+			.header_static &
+				margin-top: -30px
 			.is-open-menu & 
 				opacity: 1
 				visibility: visible

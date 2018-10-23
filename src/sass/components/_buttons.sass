@@ -34,12 +34,21 @@
 		&.btn
 			&_bord-sm
 				padding: 11px 16px 12px
+	&_sm
+		min-width: 260px
+		padding: 17px 20px
+	&_wide
+		width: 100%
 	&_bord-sm
 		padding: 18px 47px
 		border-width: 1px
 	&_bord-gray
 		color: $emperor 
 		border-color: $gallery 
+	&_bord-white
+		color: $white
+		border-color: $white
+		background-color: transparent
 	&_transparent
 		padding-left: 0
 		padding-right: 0
@@ -62,6 +71,18 @@
 		+hover
 			color: $blue
 			background-color: transparent
+	&_white 
+		color: $emperor 
+		background-color: $white 
+		border: 1px solid #ECECEC 
+	
+	&[disabled]
+		color: $white
+		background-color: $silver
+		border-color: $silver
+		+hover
+			background-color: $silver
+			cursor: initial
 	&__text
 		border-bottom: 1px solid transparent 
 		transition: border-color .3s

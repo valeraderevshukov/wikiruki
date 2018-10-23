@@ -1,0 +1,59 @@
+<svg width="180" height="100" viewBox="0 0 180 100" xmlns="http://www.w3.org/2000/svg">
+    <title>
+        Group 13
+    </title>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#F6F6F6" d="M-630-367H810v1753H-630z"/>
+        <g opacity=".3" fill="#555">
+            <path d="M15 70h5v5h-5z"/>
+            <path d="M5 80h5v5H5z"/>
+            <path d="M20 65h5v5h-5z"/>
+            <path d="M10 75h5v5h-5z"/>
+            <path d="M25 60h5v5h-5z"/>
+            <path d="M30 55h5v5h-5z"/>
+            <path d="M35 50h5v5h-5z"/>
+            <path d="M40 45h5v5h-5z"/>
+            <path d="M45 40h5v5h-5z"/>
+            <path d="M50 35h5v5h-5z"/>
+            <path d="M55 30h5v5h-5z"/>
+            <path d="M65 30h5v5h-5z"/>
+            <path d="M70 35h5v5h-5z"/>
+            <path d="M75 40h5v5h-5z"/>
+            <path d="M80 45h5v5h-5z"/>
+            <path d="M85 50h5v5h-5z"/>
+            <path d="M90 55h5v5h-5z"/>
+            <path d="M95 60h5v5h-5z"/>
+            <path d="M100 65h5v5h-5z"/>
+            <path d="M115 30h5v5h-5z"/>
+            <path d="M115 25h5v5h-5z"/>
+            <path d="M120 20h5v5h-5z"/>
+            <path d="M120 35h5v5h-5z"/>
+            <path d="M125 15h5v5h-5z"/>
+            <path d="M125 40h5v5h-5z"/>
+            <path d="M130 15h5v5h-5z"/>
+            <path d="M130 40h5v5h-5z"/>
+            <path d="M135 20h5v5h-5z"/>
+            <path d="M135 35h5v5h-5z"/>
+            <path d="M140 25h5v5h-5z"/>
+            <path d="M140 30h5v5h-5z"/>
+            <path d="M105 70h5v5h-5z"/>
+            <path d="M110 75h5v5h-5z"/>
+            <path d="M120 85h5v5h-5z"/>
+            <path d="M115 80h5v5h-5z"/>
+            <path d="M120 75h5v5h-5z"/>
+            <path d="M125 70h5v5h-5z"/>
+            <path d="M130 65h5v5h-5z"/>
+            <path d="M135 60h5v5h-5z"/>
+            <path d="M140 55h5v5h-5z"/>
+            <path d="M145 60h5v5h-5z"/>
+            <path d="M150 65h5v5h-5z"/>
+            <path d="M155 70h5v5h-5z"/>
+            <path d="M160 75h5v5h-5z"/>
+            <path d="M165 80h5v5h-5z"/>
+            <path d="M170 85h5v5h-5z"/>
+            <path d="M125 90h5v5h-5z"/>
+            <path d="M60 25h5v5h-5z"/>
+            <path d="M5 5v90h170V5H5zM0 0h180v100H0V0z" fill-rule="nonzero"/>
+        </g>
+    </g>
+</svg>

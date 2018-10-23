@@ -1,0 +1,75 @@
+<form class="general-form">
+	<div class="general-form__control form-control">
+		<label class="form-control__label">название</label>
+		<input type="text" class="input input_lg" placeholder="Название Инструкции" value="Как подоить корову">
+	</div>
+	<div class="general-form__control form-control">
+		<label class="form-control__label form-control__label_top">обложка</label>
+		<div class="cover is-filled">
+			<label class="cover__label">
+				<input type="file">
+				<span class="cover__img"></span>
+				<span class="cover__bg" style="background-image: url(../img/upload_placeholder.svg)"></span>
+				<span class="cover__placeholder">обложка (перетащите сюда фото или видео)</span>
+			</label>
+			<div class="cover__btn-wrap">
+				<!-- <div class="cover__btn"> -->
+					<button class="btn btn_sm btn_bord-white cover__btn" type="button">удалить обложку</button>
+				<!-- </div>
+				<div class="cover__btn"> -->
+					<button class="btn btn_sm btn_bord-white cover__btn" type="button">выбрать другой файл</button>
+				<!-- </div> -->
+			</div>
+		</div>
+	</div>
+	<div class="general-form__control form-control">
+		<label class="form-control__label form-control__label_top">описание</label>
+		<textarea class="input textarea general-form__textarea" placeholder="Описание (кратко)"></textarea>
+	</div>
+	<div class="general-form__control form-control">
+		<label class="form-control__label">теги</label>
+		<input type="text" data-role="tagsinput" placeholder="Ключевые, слова, через, запятую (необязательно)" value="Корова, Руки, Доить, Ферма">
+	</div>
+	<div class="general-form__control form-control">
+		<label class="form-control__label">материалы</label>
+		<input type="text" data-role="tagsinput-img" placeholder="Материалы (опционально)" value="Корова">
+	</div>
+	<div class="general-form__control form-control">
+		<label class="form-control__label">инструменты</label>
+		<input type="text" data-role="tagsinput-img" placeholder="Инструменты (опционально)" value="Ведро">
+	</div>
+	<div class="general-form__row row">
+		<div class="general-form__col col-md-6 col-sm-12">
+			<div class="form-control">
+				<input type="text" class="input" placeholder="Финансовые затраты, &#8381">
+			</div>
+		</div>
+		<div class="general-form__col col-md-6 col-sm-12">
+			<div class="form-control">
+				<input type="text" class="input" placeholder="Затраты по времени, ч">
+			</div>
+		</div>
+	</div>
+	<div class="general-form__control form-control">
+		<div class="general-form__wrap">
+			{{ mixins.checkboxRadio(
+				{
+					text: "Возрастное ограничение:",
+					jsHook: "js-age-limit",
+					class: "radio",
+					checked: true
+				}
+			) }}
+			<div class="general-form__select js-age-limit-select">
+				<select class="form-control select js-select" title="Выберите ограничение">
+					<option value="1">16+</option>
+					<option value="2">18+</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<div class="general-form__submit form-control">
+		<button type="submit" class="btn btn_wide" disabled>далее</button>
+	</div>
+
+</form>

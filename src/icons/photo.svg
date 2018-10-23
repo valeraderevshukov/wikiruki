@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="18px" viewBox="0 0 22 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>photo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Instruction-—-Compose" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2-General-filled" transform="translate(-634.000000, -850.000000)">
+            <g id="Group-2-Copy" transform="translate(499.000000, 839.000000)" fill="#ECECEC" fill-rule="nonzero">
+                <g id="Group" transform="translate(12.000000, 2.000000)">
+                    <path d="M141,13 L140.6,13 C140.2,13 139.9,12.8 139.7,12.4 L138.5,10.1 C138.2,9.4 137.5,9 136.7,9 L131.2,9 C130.5,9 129.8,9.4 129.4,10.1 L128.3,12.4 C128.1,12.8 127.8,13 127.4,13 L127,13 C124.8,13 123,14.8 123,17 L123,23 C123,25.2 124.8,27 127,27 L141,27 C143.2,27 145,25.2 145,23 L145,17 C145,14.8 143.2,13 141,13 Z M134,23 C131.8,23 130,21.2 130,19 C130,16.8 131.8,15 134,15 C136.2,15 138,16.8 138,19 C138,21.2 136.2,23 134,23 Z" id="photo"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

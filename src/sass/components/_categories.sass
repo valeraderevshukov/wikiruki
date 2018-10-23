@@ -56,3 +56,52 @@
 			max-width: 100%
 			max-height: 100%
 			display: block
+			
+
+.classes
+	display: flex
+	flex-wrap: wrap
+	&__item
+		flex: 0 0 33.3%
+		max-width: 33.3%
+		+sm
+			flex: 0 0 50%
+			max-width: 50%
+		+xs
+			flex: 0 0 100%
+			max-width: 100%
+
+.categ
+	position: relative
+	padding: 27px 16px
+	z-index: 1
+	vertical-align: top
+	cursor: pointer
+	font-family: $roboto
+	+f(16px,400, 1.65) 
+	color: $emperor 
+	background-color: $white 
+	display: block
+	box-shadow: 0 0 0 1px #ECECEC 
+	input
+		position: absolute
+		top: 0
+		left: 0
+		opacity: 0
+		&:checked  ~ .categ__text
+			&:before
+				opacity: 1
+				visibility: visible
+	&__text
+		&:before
+			position: absolute
+			content: "" 
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			z-index: -1
+			opacity: 0
+			transition: opacity .3s, visibility .3s
+			background-color: rgba(#3F36FF, .08) 
+			visibility: hidden

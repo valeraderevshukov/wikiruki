@@ -25,6 +25,23 @@
         <path d="M5 15h5v5H5z"/>
         <path d="M10 10h5v5h-5z"/>
     </g>
+</symbol><symbol id="icon-check" viewBox="0 0 17 13">
+    <title>
+        Group
+    </title>
+    <path d="M5.364 9.85l9.9-9.9 1.414 1.414L5.364 12.678l-.414-.415L0 7.313 1.414 5.9l3.95 3.95z" fill-rule="evenodd"/>
+</symbol><symbol id="icon-close" viewBox="0 0 14 14">
+    <path d="M14 1.4L12.6 0 7 5.6 1.4 0 0 1.4 5.6 7 0 12.6 1.4 14 7 8.4l5.6 5.6 1.4-1.4L8.4 7 14 1.4z"/>
+</symbol><symbol id="icon-edit" viewBox="0 0 22 22">
+    <title>
+        Combined Shape
+    </title>
+    <path d="M2.426 14.575L13.37 3.63l4.65 4.65L7.076 19.224l-4.65-4.65zM21.3 3.247c.477.489.477 1.27 0 1.759l-1.597 1.596-4.654-4.64L16.644.364a1.258 1.258 0 0 1 1.773 0l2.882 2.882zM.017 20.673l.744-4.438 4.668 4.668-4.438.744a.825.825 0 0 1-.974-.974z" fill-rule="nonzero"/>
+</symbol><symbol id="icon-exclamation" viewBox="0 0 3 12">
+    <title>
+        !
+    </title>
+    <path d="M1.872 7.68L2.24 3.2V0H.16v3.2l.352 4.48h1.36zM1.2 8.992c-.688 0-1.2.544-1.2 1.2 0 .656.544 1.2 1.2 1.2.656 0 1.2-.544 1.2-1.2 0-.656-.544-1.2-1.2-1.2z" fill-rule="evenodd"/>
 </symbol><symbol id="icon-facebook" viewBox="0 0 10 19">
     <title>
         facebook
@@ -54,11 +71,31 @@
             <path id="Icon" class="st0" d="M16 331.8c0 3.1 2.4 5.7 5.8 9 .8.7 1.5 1.5 2.2 2.3.7-.8 1.4-1.5 2.2-2.3 3.4-3.3 5.8-5.9 5.8-9 0-2.7-1.9-4.8-4.4-4.8-1.2 0-2.3.5-3.2 1.4l-.4.4-.4-.4c-.9-.9-2-1.4-3.2-1.4-2.5 0-4.4 2.1-4.4 4.8z"/>
         </g>
     </g>
+</symbol><symbol id="icon-l" viewBox="0 0 6 11">
+    <title>
+        Path 2
+    </title>
+    <path d="M2 0H0v10.112h5.893v-2H2z" fill-rule="nonzero"/>
 </symbol><symbol id="icon-login-arrow" viewBox="0 0 24 6">
     <title>
         Rectangle 6
     </title>
     <path d="M23.78 5.607H.71a8 8 0 0 0 5.63-2.316L8 1.646a5.684 5.684 0 0 1 8 0l1.662 1.645a8 8 0 0 0 5.63 2.316z" fill-rule="evenodd"/>
+</symbol><symbol id="icon-photo" viewBox="0 0 22 18">
+    <title>
+        photo
+    </title>
+    <path d="M18 4h-.4c-.4 0-.7-.2-.9-.6l-1.2-2.3c-.3-.7-1-1.1-1.8-1.1H8.2c-.7 0-1.4.4-1.8 1.1L5.3 3.4c-.2.4-.5.6-.9.6H4C1.8 4 0 5.8 0 8v6c0 2.2 1.8 4 4 4h14c2.2 0 4-1.8 4-4V8c0-2.2-1.8-4-4-4zm-7 10c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4z" fill-rule="nonzero"/>
+</symbol><symbol id="icon-remove" viewBox="0 0 16 16">
+    <title>
+        Combined Shape
+    </title>
+    <path d="M10.475 7.832l5.126 5.126-2.474 2.475L8 10.307l-5.127 5.126L.4 12.958l5.126-5.126L.4 2.705 2.873.23 8 5.357 13.127.23 15.6 2.705l-5.126 5.127z" fill-rule="evenodd"/>
+</symbol><symbol id="icon-ruble" viewBox="0 0 10 12">
+    <title>
+        &#x20BD;
+    </title>
+    <path d="M5.648 7.92H3.36v1.072h3.76v1.248H3.36V12H1.52v-1.76H.24V8.992h1.28V7.92H.24V6.272h1.28V.8h4.128c1.008 0 1.872.352 2.576 1.056.704.688 1.056 1.536 1.056 2.544 0 .992-.352 1.824-1.056 2.512-.704.672-1.568 1.008-2.576 1.008zm0-5.392H3.36v3.744h2.288c.496 0 .928-.176 1.264-.544.352-.368.528-.8.528-1.328s-.176-.96-.528-1.328a1.648 1.648 0 0 0-1.264-.544z" fill-rule="evenodd"/>
 </symbol><symbol id="icon-search" viewBox="0 0 28 28">
     <title>
         Group Copy

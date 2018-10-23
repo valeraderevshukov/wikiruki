@@ -1,0 +1,37 @@
+---
+title: Main - authorized
+bodyClass: is-gray
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{{ header.block({
+		static: true
+	}) }}
+
+	<div class="inner">
+		{{ mixins.steps({
+			list: [
+				{
+					text: '1. Выберите категорию'
+				},
+				{
+					class: 'is-active',
+					text: '2. Общая информация'
+				},
+				{
+					text: '3. Опишите шаги'
+				},
+				{
+					text: '4. Проверка и публикация'
+				}
+			]
+		}) }}
+	</div>
+	<div class="wrap">
+		<div class="inner inner_sm">
+			{% include "./partials/_general-form.html" %}
+		</div>
+	</div>
+{% endblock %}

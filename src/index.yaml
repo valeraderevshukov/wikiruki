@@ -5,3 +5,15 @@ PageList:
   ready: 100
 - file: main-authorized.html
   ready: 100
+- file: test.html
+  ready: 50
+- file: select-category.html
+  ready: 100
+- file: general-info.html
+  ready: 100
+- file: general-info-filled.html
+  ready: 100
+- file: edit-steps.html
+  ready: 100
+- file: сheck.html
+  ready: 100

@@ -1,0 +1,406 @@
+.general-form
+	&__label
+	&__row
+		display: flex
+		flex-wrap: wrap
+		margin: 20px -10px 0
+	&__col
+		padding: 0 10px
+		&:not(:first-child)
+			+sm
+				margin-top: 20px
+	&__wrap
+		display: flex
+		align-items: center
+		+xs
+			flex-direction: column
+	&__select
+		max-width: 248px
+		width: 100%
+		opacity: 0
+		visibility: hidden
+		transition: opacity .3s, visibility .3s
+		&:not(:first-child)
+			margin-left: 16px
+			+xs
+				margin-left: 0
+				margin-top: 10px
+		&.is-show
+			opacity: 1
+			visibility: visible
+.cover
+	position: relative
+	border-radius: 4px
+	box-shadow: 0 6px 8px 0 rgba($black, .1)
+	border: 1px solid $gallery
+	overflow: hidden
+	background-color: $white
+	&__label
+		position: relative
+		display: block
+		min-height: 210px
+		z-index: 1
+		input
+			position: absolute
+			opacity: 0
+			visibility: hidden
+		.cover.is-result &
+			min-height: 430px
+	&__img
+		position: absolute
+		left: 0
+		top: 0
+		bottom: 0
+		right: 0
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+		display: block
+		border-radius: 6px
+		overflow: hidden
+		border: 1px solid $gallery
+		.cover.is-filled &
+			background-image: url(../img/cow-upload.jpg)
+			&:before
+				content: ""
+				position: absolute
+				left: 0
+				top: 0
+				bottom: 0
+				right: 0
+				background-color: rgba($black,.6)
+	&__bg
+		position: absolute
+		z-index: -1
+		left: 50%
+		transform: translateX(-50%)
+		top: 40px
+		width: 180px
+		height: 100px
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
+	&__placeholder
+		position: absolute
+		z-index: -1
+		text-transform: uppercase
+		font-size: 11px
+		letter-spacing: 0.6px
+		color: rgba(#3f3f3f, .5)
+		bottom: 20px
+		left: 10px
+		right: 10px
+		text-align: center
+	&__btn-wrap
+		position: absolute
+		width: 100%
+		left: 50%
+		top: 50%
+		transform: translate(-50%,-50%)
+		display: flex
+		justify-content: center
+		opacity: 0
+		visibility: hidden
+		transition: opacity .3s, visibility .3s
+		z-index: 5
+		+xs
+			flex-direction: column
+			align-items: center
+			max-width: 250px
+		.cover.is-filled &
+			opacity: 1
+			visibility: visible
+	&__btn
+		margin: 0 10px
+		+xs
+			margin: 10px 0
+	&.is-filled
+		padding: 0
+		border: none
+		box-shadow: none
+
+
+
+.form-control
+	position: relative
+	&:not(:first-child)
+		margin-top: 20px
+	&__label
+		position: absolute
+		font-size: 11px
+		color: #3f3f3f
+		letter-spacing: 0.01em
+		padding-right: 15px
+		right: 100%
+		top: 50%
+		transform: translateY(-50%)
+		text-transform: uppercase
+		white-space: nowrap
+		+md
+			position: relative
+			top: 0
+			right: 0
+			transform: translateY(0)
+			padding-right: 0
+			margin-bottom: 10px
+			display: block
+
+		&_lg
+			padding-right: 20px
+			font-family: $walsheim
+			+f(36px,500,1.1)
+			text-transform: initial
+			color: $boulder 
+			+lg
+				position: relative
+				top: 0
+				right: 0
+				transform: translateY(0)
+				padding-right: 0
+				margin-bottom: 10px
+				display: block
+			+sm
+				font-size: 28px 
+		&_top
+			top: 23px
+
+.input
+	height: 60px
+	padding: 19px 16px 20px
+	background-color: $white
+	border: 1px solid $gallery
+	box-sizing: border-box
+	width: 100%
+	font-family: $roboto
+	font-size: 16px
+	line-height: 1.31
+	letter-spacing: -0.1px
+	color: #3f3f3f
+	+placeholder
+		color: rgba($emperor, .5)
+		font-family: $roboto
+	&:focus
+		+placeholder
+			font-size: 0
+	&_lg
+		font-family: $walsheim
+		height: 90px
+		padding: 26px 16px
+		font-size: 36px
+		font-weight: 500
+		color: $boulder
+		+sm
+			font-size: 26px
+			height: 70px
+			padding: 20px 16px
+		+xs
+			font-size: 20px
+		
+.textarea
+	height: 172px
+	resize: none
+	box-shadow: 0 6px 8px 0 rgba($black,.1)
+
+.form-info
+	position: absolute
+	margin-left: 20px
+	padding-left: 15px
+	font-size: 11px
+	color: rgba(#3F3F3F, .5) 
+	width: 224px
+	&:before
+		position: absolute
+		content: "—" 
+		top: 2px
+		left: 0
+		line-height: 1
+	+lg
+		margin-left: 10px
+	+md
+		display: none
+
+		
+.btn-control
+	position: relative
+	width: 44px
+	height: 44px
+	text-align: center
+	line-height: 44px
+	vertical-align: top
+	border-radius: 14px
+	background-color: $white 
+	display: inline-block
+	.icon
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%,-50%)
+		font-size: 18px
+		line-height: 1
+		color: $dark 
+	.icon-edit
+		font-size: 22px 
+	.icon-remove
+		font-size: 15px
+
+.radio
+	position: relative
+	display: inline-block
+	line-height: 1.88
+	cursor: pointer
+	user-select: none
+	&__text
+		color: #3f3f3f
+		padding-left: 30px
+		&:before
+			content: ""
+			position: absolute
+			background-color: $white
+			border: 2px solid $silver
+			left: 0
+			top: 4px
+			transition: border-color .3s
+			// top: 50%
+			// transform: translateY(-50%)
+			+circle(20)
+		&:after
+			content: ""
+			position: absolute
+			left: 6px
+			top: 10px
+			background-color: $blue
+			opacity: 0
+			visibility: hidden
+			transition: opacity .3s, visibility .3s
+			+circle(8)
+	input
+		position: absolute
+		opacity: 0
+		visibility: hidden
+		&:checked ~ .radio__text
+			&:after
+				opacity: 1
+				visibility: visible
+			&:before
+				border-color: $blue
+
+.checkbox
+	position: relative
+	padding-left: 40px
+	user-select: none
+	cursor: pointer
+	line-height: 1.6
+	color: #3F3F3F 
+	vertical-align: top
+	display: inline-block
+	input
+		position: absolute
+		opacity: 0
+		&:checked
+			& ~ .checkbox__icon
+				opacity: 1
+				visibility: visible
+	a
+		color: inherit
+		border-bottom: 1px solid
+		transition: border-color .3s
+		+hover
+			border-color: transparent  
+	&__text
+		&:before
+			position: absolute
+			content: "" 
+			top: 0
+			left: 0
+			width: 26px
+			height: 26px
+			border: 1px solid $blue
+			background-color: $white
+	&__icon
+		position: absolute
+		top: 6px
+		left: 5px
+		color: $blue 
+		line-height: 1
+		visibility: hidden
+		opacity: 0
+		transition: visibility .3s, opacity .3s
+		.icon
+			font-size: 13px
+
+.select
+	background-color: $white
+	outline: none
+	.dropdown-toggle
+		height: 100%
+		outline: none
+		border: 1px solid $gallery
+		background-color: transparent
+		padding-right: 16px
+		text-transform: none
+		color: #3f3f3f
+		font-weight: 400
+		+md
+			font-size: 16px
+			padding: 17px 16px 17px 16px
+		&:focus
+			outline: none!important
+		&:not(:disabled):active
+			background-color: transparent
+		&:not(:disabled):active:focus
+			box-shadow: none
+		+hover
+			background-color: $white
+			color: #3f3f3f
+		&:after
+			border-top: 8px solid rgba($emperor,.5)
+			border-right: 7px solid transparent
+			border-bottom: 0
+			border-left: 7px solid transparent
+			vertical-align: middle
+		.filter-option
+			padding: 19px 31px 20px 16px
+			// padding-left: 24px
+			// +sm
+			// 	padding-left: 15px
+			// 	padding-right: 13px
+		&.bs-placeholder>.filter-option
+			padding: 19px 31px 20px 16px
+			font-size: 16px
+			font-weight: 400
+			color: rgba($emperor,.5)
+			letter-spacing: normal
+			// +sm
+			// 	padding-left: 15px
+			// 	padding-right: 13px
+			// 	font-size: 14px
+			// 	line-height: 1.3
+			.filter-option-inner
+				padding: 0
+	&.show
+		&>.btn.dropdown-toggle
+			background-color: transparent
+	.icon
+		font-size: 9px
+		color: #777777
+	.dropdown-item
+		padding-top: 13px
+		padding-bottom: 13px
+		color: #3f3f3f
+		&.active,
+		&:active
+			text-decoration: none
+		&.selected
+			background-color: rgba($blue,.08)
+		+hover
+			background-color: rgba($blue,.08)
+		
+	.dropdown-menu
+		&.show
+			border: none
+			box-shadow: 0 2px 4px rgba(#000, .16)
+			padding: 0
+		&.inner
+			box-shadow: none
+		.inner
+			padding: 0

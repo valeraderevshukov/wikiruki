@@ -1,0 +1,48 @@
+.steps
+	margin: 0 -4px
+	display: flex
+	&__item
+		padding: 0 4px
+		font-family: $walsheim 
+		+f(18px,400,1)
+		flex: 0 0 25% 
+		max-width: 25%
+		color: rgba($emperor, .3) 
+		+md
+			flex: 0 0 100% 
+			max-width: 100%
+			text-align: center
+		&:not(.is-active)
+			+md
+				display: none
+		&.is-active
+			color: $blue 
+		&.is-check
+			color: $emperor
+	&__text
+		position: relative
+		padding: 10px 0
+		user-select: none
+		color: inherit 
+		line-height: 1
+		border-bottom: 2px solid
+		display: block
+		
+
+.step
+	+lg
+		padding-right: 224px
+	+md
+		padding-right: 0
+	&:not(:first-child)
+		padding-top: 30px
+	&:not(:last-child)
+		border-bottom: 1px solid rgba($emperor, .1)
+		padding-bottom: 30px
+	&__input
+		padding-left: 30px
+	&__divider
+		text-align: center
+		font-size: 11px
+		text-transform: uppercase
+		color: rgba(#3F3F3F, .5) 

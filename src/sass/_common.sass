@@ -1,9 +1,15 @@
+html
+	+selection
+		background-color: rgba($blue, .26) 
 body
 	font-family: $roboto
+	min-width: 320px
 	+f(16px,400,1.5)
 	letter-spacing: -0.007em
 	color: $emperor 
 	background: $white
+	&.is-gray
+		background-color: #f8f8f8
 
 // colors
 .color-dark
@@ -25,3 +31,8 @@ body
 	text-align: center
 	+md
 		margin-top: 25px
+
+.video 
+	margin: 40px 0
+	iframe
+		height: 371px

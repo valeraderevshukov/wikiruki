@@ -1,0 +1,116 @@
+<div class="sidebar">
+	<div class="sidebar__top">
+		{% for item in [
+			{
+				color: "blue",
+				svg: "l",
+				text: "1 час"
+			},
+			{
+				color: "blue",
+				svg: "ruble",
+				text: "~ 450 ₽"
+			},
+			{
+				color: "blue",
+				svg: "exclamation",
+				text: "14+"
+			}
+		] %}
+			{{ mixins.infoBlock(item) }}
+		{% endfor %}
+	</div>
+	<div class="sidebar__block">
+		<span class="edit-block edit-block_sidebar js-edit-block">
+			<button class="edit-block__btn js-edit-block-trigger" type="button">
+				<svg class="icon icon-edit">
+					<use xlink:href="img/sprite.svg#icon-edit"></use>
+				</svg>
+			</button>
+		</span>
+		<div class="inner sidebar__inner">
+			<div class="sidebar__title">
+				Материалы:
+			</div>
+			<div class="sidebar__tags">
+				{% for item in [
+					"Корова",
+					"Травка зеленая",
+					"Сено"
+				] %}
+					<span class="tag tag_img">
+						{{ item }}
+						<span>
+							<label class="overlay">
+								<span class="overlay-img"></span>
+								<span class="overlay-svg">
+									<svg class="icon icon-photo"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-photo"></use></svg>
+								</span>
+								<span class="overlay-bg"></span>
+								<!-- <input type="file" pakeupload=""> -->
+							</label>
+						</span>
+					</span>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	<div class="sidebar__block">
+		<span class="edit-block edit-block_sidebar js-edit-block">
+			<button class="edit-block__btn js-edit-block-trigger" type="button">
+				<svg class="icon icon-edit">
+					<use xlink:href="img/sprite.svg#icon-edit"></use>
+				</svg>
+			</button>
+		</span>
+		<div class="inner sidebar__inner">
+			<div class="sidebar__title">
+				Инструменты:
+			</div>
+			<div class="sidebar__tags">
+				{% for item in [
+					"Ведро",
+					"Табуретка"
+				] %}
+					<span class="tag tag_img">
+						{{ item }}
+						<span>
+							<label class="overlay">
+								<span class="overlay-img"></span>
+								<span class="overlay-svg">
+									<svg class="icon icon-photo"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-photo"></use></svg>
+								</span>
+								<span class="overlay-bg"></span>
+								<!-- <input type="file" pakeupload=""> -->
+							</label>
+						</span>
+					</span>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	<div class="sidebar__block">
+		<span class="edit-block edit-block_sidebar js-edit-block">
+			<button class="edit-block__btn js-edit-block-trigger" type="button">
+				<svg class="icon icon-edit">
+					<use xlink:href="img/sprite.svg#icon-edit"></use>
+				</svg>
+			</button>
+		</span>
+		<div class="inner sidebar__inner">
+			<div class="sidebar__tags">
+				{% for item in [
+					"Доить",
+					"Ферма",
+					"Корова",
+					"Руки",
+					"Ведро"
+				] %}
+					<span class="tag tag_wide">
+						{{ item }}
+					</span>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
