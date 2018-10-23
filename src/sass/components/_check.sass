@@ -8,6 +8,12 @@
 .sidebar
 	background-color: $white
 	border: 1px solid $gallery
+	&_public
+		border: none
+		.sidebar__block
+			border: none
+		.sidebar__inner
+			padding: 0
 	+md
 		margin-bottom: 30px
 	&__top
@@ -51,3 +57,48 @@
 	&__tags
 		&:not(:first-child)
 			margin-top: 5px
+
+.sidebar-link
+	display: flex
+	justify-content: space-between
+	padding: 24px 0
+	width: 100%
+	border-top: 1px solid rgba($gallery,.7)
+	color: $emperor
+	font-size: 14px
+	transition: color .3s
+	+hover
+		color: $blue
+		.sidebar-link__right
+			color: $blue
+	&__right
+		display: flex
+		align-items: center
+		text-align: right
+		color: rgba($emperor,.5)
+		transition: color .3s
+		.like
+			display: block
+			height: 16px
+			width: 16px
+			padding-left: 0
+	&__icon
+		min-width: 20px
+		margin-left: 12px
+		font-size: 16px
+		.icon
+			display: block
+
+.social
+	&__item
+		display: inline-block
+		&:not(:first-child)
+			margin-left: 24px
+			+sm
+				margin-left: 10px
+	&__link
+		color: rgba($emperor,.7)
+		font-size: 18px
+		transition: color .3s
+		+hover
+			color: $blue

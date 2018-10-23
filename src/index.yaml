@@ -17,3 +17,5 @@ PageList:
   ready: 100
 - file: сheck.html
   ready: 100
+- file: instruction.html
+  ready: 100

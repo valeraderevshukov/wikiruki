@@ -13,6 +13,8 @@ slider.slick({
   responsive: [
     {
       breakpoint: widthMD,
+      slidesToShow: 3,
+      slidesToScroll: 1,
       settings: {
         variableWidth: true
       }

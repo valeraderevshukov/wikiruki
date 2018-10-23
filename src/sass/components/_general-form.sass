@@ -136,6 +136,9 @@
 		transform: translateY(-50%)
 		text-transform: uppercase
 		white-space: nowrap
+		transition: opacity .3s, visibility .3s
+		opacity: 0
+		visibility: hidden
 		+md
 			position: relative
 			top: 0
@@ -144,7 +147,9 @@
 			padding-right: 0
 			margin-bottom: 10px
 			display: block
-
+		.form-control.is-filled &
+			opacity: 1
+			visibility: visible
 		&_lg
 			padding-right: 20px
 			font-family: $walsheim

@@ -112,3 +112,33 @@
 		<div class="info-block__text">{{ props.text }}</div>
 	</div>
 {% endmacro %}
+
+{% macro sidebarLink(props) %}
+	<a href="#" class="sidebar-link">
+		<span class="sidebar-link__left">{{ props.text }}</span>
+		<span class="sidebar-link__right">
+			{{ props.number }}
+			<span class="sidebar-link__icon">
+				{{ icon( props.svg ) }}
+			</span>
+		</span>
+	</a>
+{% endmacro %}
+
+{% macro social(props) %}
+	<ul class="social">
+		{% for item in [
+			"face",
+			"odnoklasniki",
+			"vk",
+			"telegram",
+			"twitter"
+		] %}
+			<li class="social__item">
+				<a href="#" class="social__link">
+					{{ icon(item) }}
+				</a>
+			</li>
+		{% endfor %}
+	</ul>
+{% endmacro %}

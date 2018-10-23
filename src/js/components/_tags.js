@@ -2,15 +2,6 @@ import tagsinput from 'bootstrap-tagsinput';
 import 'typeahead.js';
 import {buildIcon} from '../utils';
 
-// const htmlEncodeContainer = $('<div />');
-// const htmlEncode = value => {
-//   if (value) {
-//     return htmlEncodeContainer.text(value).html();
-//   } else {
-//     return '';
-//   }
-// };
-var icon = '<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 14" style="enable-background:new 0 0 14 14;" xml:space="preserve"><path d="M14,1.4L12.6,0L7,5.6L1.4,0L0,1.4L5.6,7L0,12.6L1.4,14L7,8.4l5.6,5.6l1.4-1.4L8.4,7L14,1.4z"/></svg>';
 
 var htmlEncodeContainer = $('<div />');
 function htmlEncode(value) {
@@ -143,15 +134,19 @@ const citynames = new Bloodhound({
 });
 $('[data-role="tagsinput"]').on('itemAddedOnInit', function(event) {
   const parent = $(this).parent();
+  const field = parent.find('.tt-input');
   let tags = parent.find('.tag');
   if (tags.length) {
+    field.addClass('no-remove');
     parent.find('.bootstrap-tagsinput').addClass('is-filled');
   };
 });
 $('[data-role="tagsinput-img"]').on('itemAddedOnInit', function(event) {
   const parent = $(this).parent();
+  const field = parent.find('.tt-input');
   let tags = parent.find('.tag');
   if (tags.length) {
+    field.addClass('no-remove');
     parent.find('.bootstrap-tagsinput').addClass('is-filled');
   };
 });
@@ -174,24 +169,42 @@ $('[data-role="tagsinput-img"]').tagsinput({
   }
 });
 $('[data-role="tagsinput"]').on('itemAdded', function(event) {
-  $(this).parent().find('.bootstrap-tagsinput').addClass('is-filled');
+  const parent = $(this).parents('.form-control');
+  const field = parent.find('.tt-input');
+  const container = parent.find('.bootstrap-tagsinput');
+  container.addClass('is-filled');
+  field.addClass('no-remove');
+  parent.addClass('is-filled');
 });
 $('[data-role="tagsinput-img"]').on('itemAdded', function(event) {
-  $(this).parent().find('.bootstrap-tagsinput').addClass('is-filled');
+  const parent = $(this).parents('.form-control');
+  const field = parent.find('.tt-input');
+  const container = parent.find('.bootstrap-tagsinput');
+  container.addClass('is-filled');
+  field.addClass('no-remove');
+  parent.addClass('is-filled');
 });
 $('[data-role="tagsinput"]').on('itemRemoved', function(event) {
-  const parent = $(this).parent();
+  const parent = $(this).parents('.form-control');
+  const field = parent.find('.tt-input');
+  const container = parent.find('.bootstrap-tagsinput');
   let tags = parent.find('.tag');
   if (!tags.length) {
-    parent.find('.bootstrap-tagsinput').removeClass('is-filled');
+    container.removeClass('is-filled');
+    field.removeClass('no-remove');
+    parent.removeClass('is-filled');
   };
 });
 
 
 $('[data-role="tagsinput-img"]').on('itemRemoved', function(event) {
-  const parent = $(this).parent();
+  const parent = $(this).parents('.form-control');
+  const field = parent.find('.tt-input');
+  const container = parent.find('.bootstrap-tagsinput');
   let tags = parent.find('.tag');
   if (!tags.length) {
-    parent.find('.bootstrap-tagsinput').removeClass('is-filled');
+    container.removeClass('is-filled');
+    field.removeClass('no-remove');
+    parent.removeClass('is-filled');
   };
 });

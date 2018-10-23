@@ -1,0 +1,74 @@
+<div class="sidebar sidebar_public">
+	<div class="inner sidebar__inner">
+		<div class="sidebar__block">
+			<div class="sidebar__title">
+				Материалы и Инструменты:
+			</div>
+			<div class="sidebar__tags">
+				{% for item in [
+					"Травка зеленая",
+					"Корова",
+					"Ведро",
+					"Сено",
+					"Табуретка"
+				] %}
+					<span class="tag tag_img">
+						{{ item }}
+						<span>
+							<label class="overlay">
+								<span class="overlay-img"></span>
+								<span class="overlay-svg">
+									<svg class="icon icon-photo"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-photo"></use></svg>
+								</span>
+								<span class="overlay-bg"></span>
+								<!-- <input type="file" pakeupload=""> -->
+							</label>
+						</span>
+					</span>
+				{% endfor %}
+				<a href="#" class="btn btn_blue btn_sidebar">Купить набор</a>
+			</div>
+		</div>
+		<div class="sidebar__links">
+			
+			<span href="#" class="sidebar-link">
+				<span class="sidebar-link__left">Добавить в Избранное</span>
+				<span class="sidebar-link__right">
+					53
+					<span class="sidebar-link__icon">
+						<label class="like">
+							<input type="checkbox" tabindex="0">
+							<svg class="icon icon-heart-outline">
+								<use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+							</svg>
+							<svg class="icon icon-heart">
+								<use xlink:href="img/sprite.svg#icon-heart"></use>
+							</svg>
+						</label>
+					</span>
+				</span>
+			</span>
+			{% for item in [
+				{
+					text: "Скачать PDF",
+					number: "129",
+					svg: "dwnld"
+				},
+				{
+					text: "Распечатать",
+					number: "34",
+					svg: "prnt"
+				}
+			] %}
+				{{ mixins.sidebarLink(item) }}
+			{% endfor %}
+			
+			<div class="sidebar-link">
+				<span class="sidebar-link__left">Поделиться</span>
+				<span class="sidebar-link__social">
+					{{ mixins.social() }}
+				</span>
+			</div>
+		</div>
+	</div>
+</div>

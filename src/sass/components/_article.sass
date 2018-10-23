@@ -6,6 +6,13 @@
 	+sm
 		padding: 15px
 		min-height: 150px
+	&.article-field_public
+		padding-top: 0
+		padding-left: 0
+		padding-bottom: 0
+		border: none
+		+md
+			padding-right: 0
 	h3
 		&:not(:first-child)
 			margin-top: 90px 
@@ -43,6 +50,32 @@
 		+lg
 			padding-left: 0
 		
+.article-tags
+	position: relative
+	&:not(:first-child)
+		margin-top: 60px
+		+md
+			margin-top: 40px
+		+sm
+			margin-top: 30px
+	&:not(:last-child)
+		margin-bottom: 60px
+		+md
+			margin-bottom: 40px
+		+sm
+			margin-bottom: 30px
+	&__label
+		position: absolute
+		top: 13px
+		padding-right: 15px
+		right: 100%
+
+.comments
+	padding-bottom: 60px
+	img
+		max-width: 100%
+		display: block
+
 .block-step
 	padding-right: 5px
 	min-width: 94px
@@ -51,9 +84,17 @@
 		min-width: 0
 
 .article
+	&__wrap
+		padding: 60px 0 80px
+		+md
+			padding: 40px 0 60px
+		+sm
+			padding: 30px 0
 	&__row
 		&:not(:first-child)
 			margin-top: 30px
+		&_bord
+			border-bottom: 1px solid #ECECEC 
 	&__field
 		padding: 40px 75px 60px 60px
 		+md
@@ -101,19 +142,40 @@
 		background-color: rgba($black,.25)
 		z-index: -1
 	&_lg
-		padding: 110px 80px 33px
+		padding: 110px 0 33px
+		min-height: 520px
+		+md
+			padding-top: 74px
+		+sm
+			padding-top: 74px
 	&__head
 		flex: 1 0 auto
 	&__footer
 		flex: 0 0 auto
 		&-wrap
+			display: flex
+			justify-content: space-between
+			align-items: center
+			margin-top: 12px
+			+xs
+				flex-direction: column
+				align-items: flex-start
 	&__topic
 		color: $white
+	&__info-blocks
+		display: flex
+		color: $white
+		+xs
+			margin-bottom: 12px
+		.info-block
+			&:not(:first-child)
+				margin-left: 20px
+				+lg
+					margin-left: 20px
 
 .author
 	display: flex
 	align-items: center
-	margin-top: 12px
 	&__img
 		background-size: cover
 		background-position: center
@@ -150,6 +212,9 @@
 		&_blue
 			background-color: $blue
 			color: $white
+		&_white
+			background-color: $white
+			color: $dark
 	&__text
 		font-size: 14px
 		&:not(:first-child)

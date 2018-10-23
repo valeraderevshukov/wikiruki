@@ -49,3 +49,30 @@
 		z-index: 1
 		color: $blue 
 		font-size: 18px
+		
+.breadcrumbs
+	margin-bottom: 25px
+	+md
+		margin-bottom: 20px
+	+sm
+		margin-bottom: 15px
+	&__item
+		position: relative
+		vertical-align: top
+		display: inline-block
+		&:not(:first-child)
+			padding-left: 5px
+		&:not(:last-child)
+			padding-right: 5px
+			&:before
+				position: absolute
+				top: 50%
+				transform: translateY(-55%)
+				right: -4px
+				content: "›" 
+				font-size: 14px
+				line-height: 1
+				
+	a
+		color: inherit
+		display: block
