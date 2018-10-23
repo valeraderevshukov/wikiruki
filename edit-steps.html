@@ -1,0 +1,363 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Edit-steps</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css">
+  </head>
+
+  <body class="is-gray">
+    <!-- BEGIN content -->
+    <div class="out">
+      <!-- begin header -->
+      <header class="header js-header header_static">
+        <div class="header__inner inner">
+          <div class="header__wrap">
+            <div class="header__left">
+              <!-- begin logo -->
+              <a href="./index.html" class="logo">
+                <span class="logo__icons">
+                  <img src="./img/logo-icons.svg" alt="logo-icons">
+                </span>
+                <span class="logo__text">
+                  <img src="./img/logo-text.svg" alt="logo-text">
+                </span>
+              </a>
+              <!-- end logo -->
+            </div>
+            <nav class="header__nav nav js-nav">
+              <form action="#" class="nav__search nav-search js-nav-search">
+                <input type="text" class="nav-search__input" placeholder="Поиск по сайту">
+              </form>
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Инструкции</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Классы</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Конкурсы</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Вопрос-ответ</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Образование</a>
+                </li>
+              </ul>
+              <div class="nav__login login">
+                <div class="login__item"><a href="#" class="login__link">Вход</a></div>
+                <div class="login__item is-active"><a href="#" class="login__link">Регистрация</a></div>
+              </div>
+            </nav>
+            <div class="header__right">
+              <div class="header__login login">
+                <div class="login__item"><a href="#" class="login__link">Вход</a></div>
+                <div class="login__item is-active"><a href="#" class="login__link">Регистрация</a></div>
+              </div>
+              <div class="header__search search">
+                <button class="search__button" type="button">
+                  <svg class="icon icon-search">
+                    <use xlink:href="img/sprite.svg#icon-search"></use>
+                  </svg>
+                </button>
+              </div>
+              <button class="btn-menu js-btn-menu" type="button">
+                <span class="btn-menu__line"></span>
+                <span class="btn-menu__line"></span>
+                <span class="btn-menu__line"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- end header -->
+      <div class="inner">
+        <!-- begin steps -->
+        <ul class="steps">
+          <li class="steps__item is-check"><span class="steps__text">1. Выберите категорию</span></li>
+          <li class="steps__item is-check"><span class="steps__text">2. Общая информация</span></li>
+          <li class="steps__item is-active"><span class="steps__text">3. Опишите шаги</span></li>
+          <li class="steps__item"><span class="steps__text">4. Проверка и публикация</span></li>
+        </ul>
+        <!-- end steps -->
+      </div>
+      <div class="wrap">
+        <form action="/">
+          <!-- begin step -->
+          <div class="step">
+            <div class="step__inner inner inner_sm">
+              <div class="step__control form-control">
+                <label class="form-control__label form-control__label_lg">Шаг 1.</label>
+                <input type="text" class="step__input input input_lg" value="Подготовка" placeholder="Назовите шаг">
+              </div>
+              <div class="form-control">
+                <div class="form-info" style="top: 140px; left: 100%;">Выделите текст, чтобы увидеть все возможности его редактирования.</div>
+                <div class="article-field" contenteditable="true" placeholder="Начните писать...">
+                  <h5>Узнать, как правильно доить корову, нельзя без определенной подготовки. Дойка начинается с массажа. Его начинают с верхней части, постепенно продвигаясь к соскам.</h5>
+                  <p>Непосредственно перед дойкой вымя нужно вымыть водой с хозяйственным мылом (рисунок 1). Такой раствор поможет размягчить соски, очистить их от грязи. Вода не должна быть слишком теплой, чтобы молоко не свернулось. После мытья вымя вытирают чистым сухим полотенцем. Руки тоже нужно тщательно вымыть с мылом, а при аппаратной дойке – продезинфицировать устройство.</p>
+                  <div class="img-wrap">
+                    <div class="img-block js-img-block">
+                      <div class="img-block__overlay js-img-block-overlay"></div>
+                      <button class="img-block__close js-img-block-close" type="button" contenteditable="false">закрыть</button>
+                      <div class="img-block__wrap" contenteditable="false">
+                        <div class="img-block__note">2. Добавьте примечание</div>
+                        <div class="img-block__controls">
+                          <button class="img-block__control btn-control js-edit-img" type="button">
+                            <svg class="icon icon-edit">
+                              <use xlink:href="img/sprite.svg#icon-edit"></use>
+                            </svg>
+                          </button>
+                          <button class="img-block__control btn-control js-remove-img" type="button">
+                            <svg class="icon icon-remove">
+                              <use xlink:href="img/sprite.svg#icon-remove"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="img-block__point point js-point" style="top: 40%; left: 25%;">
+                          <buttton class="point__trigger js-point-trigger" type="button"></buttton>
+                          <div class="point__drop js-point-drop">
+                            <div class="point__input">
+                              <input type="text" placeholder="Опишите, что тут важно">
+                            </div>
+                            <div class="point__footer">
+                              <button class="point__btn js-point-remove" type="button">УДАЛИТЬ</button>
+                              <button class="point__btn point__btn_blue" type="button">СОХРАНИТЬ</button>
+                            </div>
+                          </div>
+                        </div>
+                        <img src="./img/cow.jpg" alt="cow">
+                      </div>
+                      <div class="img-block__label">Рисунок 1. Подбираемся поближе</div>
+                    </div>
+                  </div>
+                  <p>Такой раствор поможет размягчить соски, очистить их от грязи. Вода не должна быть слишком теплой, чтобы молоко не свернулось. После мытья вымя вытирают чистым сухим полотенцем. Руки тоже нужно тщательно вымыть с мылом, а при аппаратной дойке – продезинфицировать устройство.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end step -->
+          <!-- begin step -->
+          <div class="step">
+            <div class="step__inner inner inner_sm">
+              <div class="step__control form-control">
+                <label class="form-control__label form-control__label_lg">Шаг 2.</label>
+                <input type="text" class="step__input input input_lg" value="Техника доения" placeholder="Назовите шаг">
+              </div>
+              <div class="form-control">
+                <div class="form-info" style="top: 820px; left: 100%;">Нажмите, чтобы выбрать фото. Выберите несколько файлов, чтобы добавить фотогалерею</div>
+                <div class="article-field" contenteditable="true" placeholder="Начните писать...">
+                  <h5>Чтобы узнать, как правильно доить корову руками, нужно сделать следующее:</h5>
+                  <ol>
+                    <li>Правильно захватить сосок можно так: расположить все пальцы на соске, чтобы указательный находился под большим, а мизинец – с наружной части соска;</li>
+                    <li>Сжимая кулак, необходимо следить, чтобы сосок не кривился, а льющееся молоко не должно контактировать с руками;</li>
+                    <li>Чтобы молоко лилось из соска струей, сжимают не все пальцы сразу, а сверху вниз: сначала большой и указательный, постепенно спускаясь к мизинцу. Такая техника улучшает приток молока.</li>
+                    <li>После этого кулак разжимают, но пальцы с соска не убирают.</li>
+                    <li>Когда начинается сжатие безымянного пальца и мизинца, остальные пальцы следует сжать, чтобы молоко не пошло вверх. Далее алгоритм действий повторяется.</li>
+                  </ol>
+                  <div class="img-wrap">
+                    <div class="img-wrap__row row">
+                      <div class="img-wrap__col col-md-6">
+                        <div class="img-block js-img-block">
+                          <div class="img-block__overlay js-img-block-overlay"></div>
+                          <button class="img-block__close js-img-block-close" type="button" contenteditable="false">закрыть</button>
+                          <div class="img-block__wrap" contenteditable="false">
+                            <div class="img-block__note">2. Добавьте примечание</div>
+                            <div class="img-block__controls">
+                              <button class="img-block__control btn-control js-edit-img" type="button">
+                                <svg class="icon icon-edit">
+                                  <use xlink:href="img/sprite.svg#icon-edit"></use>
+                                </svg>
+                              </button>
+                              <button class="img-block__control btn-control js-remove-img" type="button">
+                                <svg class="icon icon-remove">
+                                  <use xlink:href="img/sprite.svg#icon-remove"></use>
+                                </svg>
+                              </button>
+                            </div>
+                            <div class="img-block__point point js-point" style="top: 40%; left: 25%;">
+                              <buttton class="point__trigger js-point-trigger" type="button"></buttton>
+                              <div class="point__drop js-point-drop">
+                                <div class="point__input">
+                                  <input type="text" placeholder="Опишите, что тут важно">
+                                </div>
+                                <div class="point__footer">
+                                  <button class="point__btn js-point-remove" type="button">УДАЛИТЬ</button>
+                                  <button class="point__btn point__btn_blue" type="button">СОХРАНИТЬ</button>
+                                </div>
+                              </div>
+                            </div>
+                            <img src="./img/cow.jpg" alt="cow">
+                          </div>
+                          <div class="img-block__label">Рисунок 2. Доение с аппаратом</div>
+                        </div>
+                      </div>
+                      <div class="img-wrap__col col-md-6">
+                        <div class="img-block js-img-block">
+                          <div class="img-block__overlay js-img-block-overlay"></div>
+                          <button class="img-block__close js-img-block-close" type="button" contenteditable="false">закрыть</button>
+                          <div class="img-block__wrap" contenteditable="false">
+                            <div class="img-block__note">2. Добавьте примечание</div>
+                            <div class="img-block__controls">
+                              <button class="img-block__control btn-control js-edit-img" type="button">
+                                <svg class="icon icon-edit">
+                                  <use xlink:href="img/sprite.svg#icon-edit"></use>
+                                </svg>
+                              </button>
+                              <button class="img-block__control btn-control js-remove-img" type="button">
+                                <svg class="icon icon-remove">
+                                  <use xlink:href="img/sprite.svg#icon-remove"></use>
+                                </svg>
+                              </button>
+                            </div>
+                            <div class="img-block__point point js-point" style="top: 40%; left: 25%;">
+                              <buttton class="point__trigger js-point-trigger" type="button"></buttton>
+                              <div class="point__drop js-point-drop">
+                                <div class="point__input">
+                                  <input type="text" placeholder="Опишите, что тут важно">
+                                </div>
+                                <div class="point__footer">
+                                  <button class="point__btn js-point-remove" type="button">УДАЛИТЬ</button>
+                                  <button class="point__btn point__btn_blue" type="button">СОХРАНИТЬ</button>
+                                </div>
+                              </div>
+                            </div>
+                            <img src="./img/cow.jpg" alt="cow">
+                          </div>
+                          <div class="img-block__label img-block__label_no-edit">Добавьте описание…</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Лучше доить сначала два передних соска, а затем два задних, так как выдавливание молок сначала из правой, а затем из левой доли может привести к недостаточному удалению молока из задней части. Это объясняется тем, что одна часть вымени будет доиться более сильной (правой) рукой, а другая – более слабой.</p>
+                  <p> &nbsp; </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end step -->
+          <!-- begin step -->
+          <div class="step">
+            <div class="step__inner inner inner_sm">
+              <div class="step__control form-control">
+                <label class="form-control__label form-control__label_lg">Шаг 3.</label>
+                <input type="text" class="step__input input input_lg" placeholder="Назовите шаг">
+              </div>
+              <div class="form-control">
+                <div class="form-info" style="top: 820px; left: 100%;">Нажмите, чтобы выбрать фото. Выберите несколько файлов, чтобы добавить фотогалерею</div>
+                <div class="article-field" contenteditable="true" placeholder="Начните писать..."></div>
+              </div>
+            </div>
+          </div>
+          <!-- end step -->
+          <!-- begin step -->
+          <div class="step">
+            <div class="step__inner inner inner_sm">
+              <div class="step__footer">
+                <div class="step__control form-control">
+                  <button class="btn btn_wide btn_white btn_bord-sm" type="button">добавить шаг</button>
+                </div>
+                <div class="step__divider form-control">или</div>
+                <div class="step__control form-control">
+                  <button class="btn btn_wide btn_blue" type="submit">готово (проверить)</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end step -->
+        </form>
+      </div>
+      <!-- begin footer -->
+      <div class="footer">
+        <div class="footer__inner inner">
+          <div class="footer__top row">
+            <div class="footer__left col-md-6">
+              <div class="footer__title">E-mail рассылка</div>
+              <div class="footer__text">Оставь свой адрес e-mail и получи доступ к еженедельной рассылке лучших инструкций и новостей WikiRuki:</div>
+              <!-- begin subscribe -->
+              <form class="footer__subscribe subscribe">
+                <div class="subscribe__input">
+                  <input type="text" placeholder="Ваш e-mail">
+                </div>
+                <button class="subscribe__btn" type="button">ОТПРАВИТЬ <svg class="icon icon-arr-right">
+                    <use xlink:href="img/sprite.svg#icon-arr-right"></use>
+                  </svg>
+                </button>
+              </form>
+              <!-- end subscribe -->
+            </div>
+            <div class="footer__right col-md-6" data-accordion-group>
+              <div class="footer__row row">
+                <div class="footer__col col-md-4" data-accordion-item data-accordion-open data-accordion-on-init="768">
+                  <div class="footer__group">
+                    <div class="footer__title" data-accordion-trigger>Портал</div>
+                    <ul class="footer__list" data-accordion-container>
+                      <li class="footer__item"><a href="#" class="footer__link">Инструкции</a></li>
+                      <li class="footer__item"><a href="#" class="footer__link">Классы</a></li>
+                      <li class="footer__item"><a href="#" class="footer__link">Конкурсы</a></li>
+                      <li class="footer__item"><a href="#" class="footer__link">Вопрос-ответ</a></li>
+                      <li class="footer__item"><a href="#" class="footer__link">Образование</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer__col col-md-4" data-accordion-item data-accordion-on-init="768">
+                  <div class="footer__group">
+                    <div class="footer__title" data-accordion-trigger>О нас</div>
+                    <ul class="footer__list" data-accordion-container>
+                      <li class="footer__item"><a href="#" class="footer__link">Что такое WikiRuki?</a></li>
+                      <li class="footer__item"><a href="#" class="footer__link">Сотрудничество</a></li>
+                      <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+                      <li class="footer__item"><a href="#" class="footer__link">Вакансии</a></li>
+                      <li class="footer__item"><a href="#" class="footer__link">Часто задаваемые вопросы</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer__col col-md-4" data-accordion-item data-accordion-on-init="768">
+                  <div class="footer__group">
+                    <div class="footer__title" data-accordion-trigger>Мы в соцсетях</div>
+                    <ul class="footer__list" data-accordion-container>
+                      <li class="footer__item"><a href="#" class="footer__link">Вконтакте</a></li>
+                      <li class="footer__item"><a href="#" class="footer__link">Facebook</a></li>
+                      <li class="footer__item"><a href="#" class="footer__link">Youtube</a></li>
+                      <li class="footer__item"><a href="#" class="footer__link">Instagram</a></li>
+                      <li class="footer__item"><a href="#" class="footer__link">Pinterest</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__copy">
+              <a href="#" class="footer__logo logo-sm">
+                <img src="./img/logo-sm.svg" alt="img">
+              </a>
+              <div class="copy">Copyright WikiRuki &copy; 2018</div>
+            </div>
+            <div class="footer__policy">
+              <a href="#" class="footer__link">Пользовательское соглашение</a>
+              <a href="#" class="footer__link">Политика конфиденциальности</a>
+              <a href="#" class="footer__link">Термины и положения</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end footer -->
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END scripts -->
+  </body>
+
+</html>
