@@ -389,8 +389,7 @@
 		font-size: 9px
 		color: #777777
 	.dropdown-item
-		padding-top: 13px
-		padding-bottom: 13px
+		padding: 13px 16px
 		color: #3f3f3f
 		&.active,
 		&:active
@@ -401,9 +400,13 @@
 			background-color: rgba($blue,.08)
 		
 	.dropdown-menu
+		margin: 4px 0
+		box-shadow: 0 2px 4px rgba(#000, .16)
+		&[x-placement="top-start"]
+			box-shadow: 0 -2px 4px rgba(#000, .16)
+
 		&.show
 			border: none
-			box-shadow: 0 2px 4px rgba(#000, .16)
 			padding: 0
 		&.inner
 			box-shadow: none

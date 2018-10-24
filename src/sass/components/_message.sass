@@ -1,0 +1,35 @@
+.message
+	position: absolute
+	left: 0
+	right: 0
+	top: 50%
+	transform: translateY(-50%)
+	padding: 0 15px
+	z-index: 5
+	opacity: 0
+	visibility: hidden
+	transition: opacity .3s, visibility .3s
+	.img-block.is-saved &
+		opacity: 1
+		visibility: visible
+	&__wrap
+		position: relative
+		max-width: 540px
+		width: 100%
+		margin: 0 auto
+		padding: 11px 35px 9px
+		background-color: $dark
+		opacity: 0.9
+		border-radius: 8px
+		color: $white
+		text-align: center
+		user-select: none
+		+xs
+			font-size: 14px
+	&__close
+		position: absolute
+		background-color: transparent
+		color: $white
+		font-size: 10px
+		right: 17px
+		top: 17px	

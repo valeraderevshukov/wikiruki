@@ -1,0 +1,82 @@
+.edit-buttons
+	position: absolute
+	padding: 4px 6px
+	background-color: $dark
+	border-radius: 8px
+	display: flex
+	z-index: 5
+	&__arrow
+		position: absolute
+		font-size: 7px
+		color: $dark
+		left: 50%
+		top: 100%
+		transform: translateX(-50%) rotate(180deg)
+		margin-top: -1px
+		z-index: 1
+		.icon
+			display: block
+	&__btn
+		color: $white
+		width: 36px
+		height: 36px
+		border-radius: 4px
+		display: flex
+		align-items: center
+		justify-content: center
+		background-color: transparent
+		transition: background-color .3s, color .3s
+		+hover
+			background-color: $emperor
+		&:not(:first-child)
+			margin-left: 6px
+		&.is-active
+			background-color: $gallery
+			border-radius: 10px
+			color: $dark
+			+hover
+				background-color: $gallery
+		.icon-B
+			font-size: 17px
+		.icon-i
+			font-size: 18px
+		.icon-ol
+			font-size: 22px
+		.icon-ul
+			font-size: 20px
+
+.paste-buttons
+	padding: 0 8px
+	position: absolute
+	display: flex
+	right: 100%
+	margin-right: -30px
+	z-index: 5
+	+lg
+		right: auto
+		left: 22px
+		margin-top: -66px
+	+sm
+		left: 7px
+	&__btn
+		display: flex
+		align-items: center
+		justify-content: center
+		background-color: $dark
+		font-size: 16px
+		color: $white
+		width: 44px
+		height: 44px
+		border-radius: 14px
+		transition: background-color .3s
+		+hover
+			background-color: lighten($dark, 20%)
+		&:not(:first-child)
+			margin-left: 6px
+		.icon
+			display: block
+		.icon-photo
+			font-size: 18px
+		.icon-code
+			fill: none
+			stroke: $white

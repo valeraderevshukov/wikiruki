@@ -31,12 +31,12 @@
 		</div>
 		<div class="sidebar__links">
 			
-			<span href="#" class="sidebar-link">
+			<label class="sidebar-link sidebar-link_hover">
 				<span class="sidebar-link__left">Добавить в Избранное</span>
 				<span class="sidebar-link__right">
 					53
 					<span class="sidebar-link__icon">
-						<label class="like">
+						<span class="like">
 							<input type="checkbox" tabindex="0">
 							<svg class="icon icon-heart-outline">
 								<use xlink:href="img/sprite.svg#icon-heart-outline"></use>
@@ -44,10 +44,10 @@
 							<svg class="icon icon-heart">
 								<use xlink:href="img/sprite.svg#icon-heart"></use>
 							</svg>
-						</label>
+						</span>
 					</span>
 				</span>
-			</span>
+			</label>
 			{% for item in [
 				{
 					text: "Скачать PDF",

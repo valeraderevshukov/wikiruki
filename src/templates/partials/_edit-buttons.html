@@ -1,0 +1,15 @@
+
+<div class="edit-buttons" style="top: 60px; left: 370px;">
+	{% for item in [
+		{svg: "check", active: true},
+		{svg: "check"},
+		{svg: "check"}
+	] %}
+		<button type="button" class="edit-buttons__btn{% if item.active %} is-active{% endif %}">
+			{{ mixins.icon(item.svg) }}
+		</button>
+	{% endfor %}
+	<div class="edit-buttons__arrow">
+		{{ mixins.icon("login-arrow") }}
+	</div>
+</div>

@@ -18,7 +18,9 @@ const showSelect = el => {
     console.error("There is no neighbor element '.js-age-limit-select' ");
   }
 };
-showSelect(input);
+if (input.length) {
+  showSelect(input);
+}
 input.on('change', function() {
   showSelect($(this));
 });

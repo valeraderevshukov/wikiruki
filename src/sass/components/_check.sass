@@ -61,36 +61,48 @@
 .sidebar-link
 	display: flex
 	justify-content: space-between
+	align-items: center
 	padding: 24px 0
 	width: 100%
 	border-top: 1px solid rgba($gallery,.7)
 	color: $emperor
 	font-size: 14px
 	transition: color .3s
-	+hover
-		color: $blue
-		.sidebar-link__right
+	user-select: none
+	&_hover
+		+hover
 			color: $blue
+			.sidebar-link__right
+				color: $blue
 	&__right
 		display: flex
 		align-items: center
 		text-align: right
 		color: rgba($emperor,.5)
 		transition: color .3s
+		line-height: 1
 		.like
 			display: block
 			height: 16px
 			width: 16px
 			padding-left: 0
 	&__icon
+		display: flex
+		align-items: center
+		justify-content: center
 		min-width: 20px
 		margin-left: 12px
 		font-size: 16px
 		.icon
 			display: block
+		.icon-dwnld
+			font-size: 17px
+		.icon-prnt
+			font-size: 19px
 
 .social
 	&__item
+		vertical-align: middle
 		display: inline-block
 		&:not(:first-child)
 			margin-left: 24px
@@ -100,5 +112,15 @@
 		color: rgba($emperor,.7)
 		font-size: 18px
 		transition: color .3s
+		display: flex
+		align-items: center
 		+hover
 			color: $blue
+		.icon
+			display: block
+		.icon-vk
+			font-size: 11px
+		.icon-telegram
+			font-size: 15px
+		.icon-twitter
+			font-size: 13px

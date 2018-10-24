@@ -1,0 +1,11 @@
+<div class="paste-buttons">
+	{% for item in [
+		{svg: "code", active: true},
+		{svg: "video"},
+		{svg: "photo"}
+	] %}
+		<button type="button" class="paste-buttons__btn">
+			{{ mixins.icon(item.svg) }}
+		</button>
+	{% endfor %}
+</div>
